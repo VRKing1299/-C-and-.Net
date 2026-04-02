@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        nav {
+            background-color: black;
+            color: white;
+            padding: 5px;
+
+        }
+
+        nav>ul{
+            list-style: none;
+            width: 100%;
+            margin: 0 10px;
+            padding: 10px
+        }
+
+        .navItem{
+            display: inline-block;
+            line-height: 30px;
+            text-align: center;
+            height: 30px;
+            width: 150px;
+            margin: 10px 0;
+            padding: 5px;
+            border-radius: 5px;
+            transition: all 0.5s;
+        }
+        .navItem:hover{
+            background-color: red;
+        }
+        
+        a{
+            text-align: center;
+            text-decoration: none;
+            color: white;
+        }
+
+        #logOut{
+            float: right;
+            margin-right: 30px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="navItem"><a href="" target="_blank" rel="noopener noreferrer">Home</a></li>
+            <li class="navItem"><a href="" target="_blank" rel="noopener noreferrer">About Us</a></li>
+            <li class="navItem"><a href="" target="_blank" rel="noopener noreferrer">Contact Us</a></li>
+            <li class="navItem" id="logOut"><a href="" target="_blank" rel="noopener noreferrer">Log Out</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

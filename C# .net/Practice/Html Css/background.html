@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container{
+            position: relative;
+            width: 250px;
+            height: 250px;
+            border-radius: 20px;
+
+            border: 1px solid white;
+            color:white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Glow layer */
+        .container::before{
+            content: "";
+            position: absolute;
+            inset: 20px; 
+            background: linear-gradient(90deg, white,blue,purple);
+            filter: blur(50px);
+
+            z-index: -1;
+            border-radius: 200px;
+            animation: rotateGlow 05s linear infinite;
+        }
+
+        @keyframes rotateGlow{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes neonColor{
+            0%{
+                background: linear-gradient(90deg, red,green, blue);
+            }
+            /* 10%{
+                background: linear-gradient(126deg, red,green, blue);
+            }
+            20%{
+                background: linear-gradient(162deg, red,green, blue);
+            }
+            30%{
+                background: linear-gradient(198deg, red,green, blue);
+            }
+            40%{
+                background: linear-gradient(234deg, red,green, blue);
+            } */
+            25%{
+                background: linear-gradient(180deg, red,green, blue);
+            }
+            50%{
+                background: linear-gradient(270deg, red,green, blue);
+            }
+            100%{
+                background: linear-gradient(360deg, red,green, blue);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">hellow world</div>
+</body>
+</html>

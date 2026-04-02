@@ -1,0 +1,5 @@
+D:\Vedant\C# .net\Practice\Day2\EmpSalaryCalculator\EmpLib\bin\Debug\EmpLib.dll
+D:\Vedant\C# .net\Practice\Day2\EmpSalaryCalculator\EmpLib\bin\Debug\EmpLib.pdb
+D:\Vedant\C# .net\Practice\Day2\EmpSalaryCalculator\EmpLib\obj\Debug\EmpLib.csprojResolveAssemblyReference.cache
+D:\Vedant\C# .net\Practice\Day2\EmpSalaryCalculator\EmpLib\obj\Debug\EmpLib.dll
+D:\Vedant\C# .net\Practice\Day2\EmpSalaryCalculator\EmpLib\obj\Debug\EmpLib.pdb

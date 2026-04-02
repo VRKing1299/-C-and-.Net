@@ -1,0 +1,5 @@
+D:\Vedant\C# .net\assignment\Assignment - 9 Interface\PaymentSystemDependencyInjectionLib\bin\Debug\PaymentSystemDependencyInjectionLib.dll
+D:\Vedant\C# .net\assignment\Assignment - 9 Interface\PaymentSystemDependencyInjectionLib\bin\Debug\PaymentSystemDependencyInjectionLib.pdb
+D:\Vedant\C# .net\assignment\Assignment - 9 Interface\PaymentSystemDependencyInjectionLib\obj\Debug\PaymentSystemDependencyInjectionLib.csprojResolveAssemblyReference.cache
+D:\Vedant\C# .net\assignment\Assignment - 9 Interface\PaymentSystemDependencyInjectionLib\obj\Debug\PaymentSystemDependencyInjectionLib.dll
+D:\Vedant\C# .net\assignment\Assignment - 9 Interface\PaymentSystemDependencyInjectionLib\obj\Debug\PaymentSystemDependencyInjectionLib.pdb

@@ -1,0 +1,10 @@
+D:\Vedant\C# .net\assignment\Assignment On Concepts\s1\HRSystemLib\bin\Debug\HRSystemLib.dll
+D:\Vedant\C# .net\assignment\Assignment On Concepts\s1\HRSystemLib\bin\Debug\HRSystemLib.pdb
+D:\Vedant\C# .net\assignment\Assignment On Concepts\s1\HRSystemLib\obj\Debug\HRSystemLib.csprojResolveAssemblyReference.cache
+D:\Vedant\C# .net\assignment\Assignment On Concepts\s1\HRSystemLib\obj\Debug\HRSystemLib.dll
+D:\Vedant\C# .net\assignment\Assignment On Concepts\s1\HRSystemLib\obj\Debug\HRSystemLib.pdb
+D:\Vedant\C# .net\assignment\Assignment - 6 On Concepts\s1\HRSystemLib\bin\Debug\HRSystemLib.dll
+D:\Vedant\C# .net\assignment\Assignment - 6 On Concepts\s1\HRSystemLib\bin\Debug\HRSystemLib.pdb
+D:\Vedant\C# .net\assignment\Assignment - 6 On Concepts\s1\HRSystemLib\obj\Debug\HRSystemLib.csprojResolveAssemblyReference.cache
+D:\Vedant\C# .net\assignment\Assignment - 6 On Concepts\s1\HRSystemLib\obj\Debug\HRSystemLib.dll
+D:\Vedant\C# .net\assignment\Assignment - 6 On Concepts\s1\HRSystemLib\obj\Debug\HRSystemLib.pdb

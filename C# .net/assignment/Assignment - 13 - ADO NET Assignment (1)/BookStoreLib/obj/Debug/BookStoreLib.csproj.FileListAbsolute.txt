@@ -1,0 +1,5 @@
+D:\Vedant\C# .net\assignment\Assignment - 13 - ADO NET Assignment (1)\BookStoreLib\bin\Debug\BookStoreLib.dll
+D:\Vedant\C# .net\assignment\Assignment - 13 - ADO NET Assignment (1)\BookStoreLib\bin\Debug\BookStoreLib.pdb
+D:\Vedant\C# .net\assignment\Assignment - 13 - ADO NET Assignment (1)\BookStoreLib\obj\Debug\BookStoreLib.csprojResolveAssemblyReference.cache
+D:\Vedant\C# .net\assignment\Assignment - 13 - ADO NET Assignment (1)\BookStoreLib\obj\Debug\BookStoreLib.dll
+D:\Vedant\C# .net\assignment\Assignment - 13 - ADO NET Assignment (1)\BookStoreLib\obj\Debug\BookStoreLib.pdb

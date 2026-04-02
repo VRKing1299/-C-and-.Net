@@ -1,0 +1,10 @@
+D:\Vedant\C# .net\assignment\Assignment On Concepts\s1\GSTCalcLib\bin\Debug\GSTCalcLib.dll
+D:\Vedant\C# .net\assignment\Assignment On Concepts\s1\GSTCalcLib\bin\Debug\GSTCalcLib.pdb
+D:\Vedant\C# .net\assignment\Assignment On Concepts\s1\GSTCalcLib\obj\Debug\GSTCalcLib.dll
+D:\Vedant\C# .net\assignment\Assignment On Concepts\s1\GSTCalcLib\obj\Debug\GSTCalcLib.pdb
+D:\Vedant\C# .net\assignment\Assignment On Concepts\s1\GSTCalcLib\obj\Debug\GSTCalcLib.csprojResolveAssemblyReference.cache
+D:\Vedant\C# .net\assignment\Assignment - 6 On Concepts\s1\GSTCalcLib\bin\Debug\GSTCalcLib.dll
+D:\Vedant\C# .net\assignment\Assignment - 6 On Concepts\s1\GSTCalcLib\bin\Debug\GSTCalcLib.pdb
+D:\Vedant\C# .net\assignment\Assignment - 6 On Concepts\s1\GSTCalcLib\obj\Debug\GSTCalcLib.csprojResolveAssemblyReference.cache
+D:\Vedant\C# .net\assignment\Assignment - 6 On Concepts\s1\GSTCalcLib\obj\Debug\GSTCalcLib.dll
+D:\Vedant\C# .net\assignment\Assignment - 6 On Concepts\s1\GSTCalcLib\obj\Debug\GSTCalcLib.pdb

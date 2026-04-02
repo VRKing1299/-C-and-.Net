@@ -1,0 +1,5 @@
+D:\Vedant\C# .net\Practice\4-3 pract\MydelegatePract\bin\Debug\MydelegatePract.dll
+D:\Vedant\C# .net\Practice\4-3 pract\MydelegatePract\bin\Debug\MydelegatePract.pdb
+D:\Vedant\C# .net\Practice\4-3 pract\MydelegatePract\obj\Debug\MydelegatePract.csprojResolveAssemblyReference.cache
+D:\Vedant\C# .net\Practice\4-3 pract\MydelegatePract\obj\Debug\MydelegatePract.dll
+D:\Vedant\C# .net\Practice\4-3 pract\MydelegatePract\obj\Debug\MydelegatePract.pdb

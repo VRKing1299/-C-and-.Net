@@ -1,0 +1,10 @@
+D:\Vedant\C# .net\Exam\Assignment 1\EmployeeManagementLib\bin\Debug\EmployeeManagementLib.dll
+D:\Vedant\C# .net\Exam\Assignment 1\EmployeeManagementLib\bin\Debug\EmployeeManagementLib.pdb
+D:\Vedant\C# .net\Exam\Assignment 1\EmployeeManagementLib\obj\Debug\EmployeeManagementLib.dll
+D:\Vedant\C# .net\Exam\Assignment 1\EmployeeManagementLib\obj\Debug\EmployeeManagementLib.pdb
+D:\Vedant\C# .net\Exam\Assignment 1\EmployeeManagementLib\obj\Debug\EmployeeManagementLib.csprojResolveAssemblyReference.cache
+D:\Vedant\C# .net\Pract Exam - Copy\Pract Assignment 1\EmployeeManagementLib\bin\Debug\EmployeeManagementLib.dll
+D:\Vedant\C# .net\Pract Exam - Copy\Pract Assignment 1\EmployeeManagementLib\bin\Debug\EmployeeManagementLib.pdb
+D:\Vedant\C# .net\Pract Exam - Copy\Pract Assignment 1\EmployeeManagementLib\obj\Debug\EmployeeManagementLib.csprojResolveAssemblyReference.cache
+D:\Vedant\C# .net\Pract Exam - Copy\Pract Assignment 1\EmployeeManagementLib\obj\Debug\EmployeeManagementLib.dll
+D:\Vedant\C# .net\Pract Exam - Copy\Pract Assignment 1\EmployeeManagementLib\obj\Debug\EmployeeManagementLib.pdb

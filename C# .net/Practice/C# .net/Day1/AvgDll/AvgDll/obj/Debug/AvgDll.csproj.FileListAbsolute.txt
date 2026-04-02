@@ -1,0 +1,5 @@
+D:\Vedant\C# .net\Practice\Day1\AvgDll\AvgDll\bin\Debug\AvgDll.dll
+D:\Vedant\C# .net\Practice\Day1\AvgDll\AvgDll\bin\Debug\AvgDll.pdb
+D:\Vedant\C# .net\Practice\Day1\AvgDll\AvgDll\obj\Debug\AvgDll.csprojResolveAssemblyReference.cache
+D:\Vedant\C# .net\Practice\Day1\AvgDll\AvgDll\obj\Debug\AvgDll.dll
+D:\Vedant\C# .net\Practice\Day1\AvgDll\AvgDll\obj\Debug\AvgDll.pdb

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .states{
+            display: inline-block;
+            background-color: white;
+            width: 200px;
+            height: 40px;
+            margin: 10px 5% ;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 1px 1px 5px grey;
+            border-left: 10px solid royalblue ;
+            position: relative;
+            overflow: hidden;
+            transition: all 1s ;
+        }
+        .filling{
+            display: inline-block;
+            width: 0px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all 1s ease;
+            background: royalblue;
+        }
+        .states:hover > .filling{
+            width: 100%;
+        }
+        /* .states::before{
+            content: "";
+            display: inline-block;
+            background: royalblue;
+            width: 0px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all 1s ease;
+        }
+        .states::after{
+            content: "hellow world";
+        }
+        
+        .states:hover::before{
+            width: 100%;
+        } */
+        .states>p{
+            position: relative;
+            top:-5px
+        }
+        .states:hover{
+            color: white;
+        }
+
+        main{
+            text-align: center;
+            background-color: rgb(228, 226, 226);
+            border: 2px solid royalblue;
+            border-radius: 10px;
+            width: 600px;
+            margin: 100px auto;
+        }
+        body{
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <div class="states">
+            <div class="filling"> </div>
+            <p>Maharashtra</p>
+        </div>
+        <div class="states">
+            <div class="filling"> </div>
+            <p>Gujrat</p>
+        </div>
+        <div class="states">
+            <div class="filling"> </div>
+            <p>Punjab</p>
+        </div>
+        <div class="states">
+            <div class="filling"> </div>
+            <p>Goa</p>
+        </div>
+        <div class="states">
+            <div class="filling"> </div>
+            <p>Rajesthan</p>
+        </div>
+        <div class="states">
+            <div class="filling"> </div>
+            <p>Delhi</p>
+        </div>
+        <div class="states">
+            <div class="filling"> </div>
+            <p>Karnataka</p>
+        </div>
+        <div class="states">
+            <div class="filling"> </div>
+            <p>Assam</p>
+        </div>
+    </main>
+
+    
+</body>
+</html>

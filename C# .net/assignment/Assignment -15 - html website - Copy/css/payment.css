@@ -1,0 +1,115 @@
+/* BODY BACKGROUND */
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ffecd2, #fcb69f);
+}
+
+/* PAYMENT CARD */
+.payment-page{
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(15px);
+    padding: 30px;
+    width: 420px;
+    border-radius: 25px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* FORM SPACING */
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* INPUT GROUP */
+.input-group {
+    position: relative;
+    margin-bottom: 18px;
+}
+
+/* INPUT FIELD */
+.input-group input {
+    width: 90%;
+    padding: 14px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 14px;
+    background: rgba(255,255,255,0.8);
+    transition: all 0.3s ease;
+}
+
+/* INPUT HOVER + FOCUS */
+.input-group input:hover{
+    border-color: #ffb347;
+}
+
+.input-group input:focus{
+    border-color: #ffb347;
+    box-shadow: 0 0 0 3px rgba(255, 179, 71, 0.2);
+}
+
+/* FLOATING LABEL */
+.input-group label {
+    position: absolute;
+    left: 14px;
+    top: 14px;
+    color: #888;
+    font-size: 13px;
+    transition: 0.3s;
+    background: white;
+    padding: 0 6px;
+    border-radius: 5px;
+}
+
+/* FLOAT EFFECT */
+.input-group input:focus + label,
+.input-group input:valid + label{
+    top: -8px;
+    font-size: 11px;
+    color: #ff8c00;
+}
+
+/* TOTAL PAYMENT */
+.totalPayment{
+    margin: 20px auto;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    background: linear-gradient(45deg, #ffb347, #ffd91c);
+    padding: 12px;
+    border-radius: 12px;
+    color: black;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 14px;
+    background: linear-gradient(45deg, #ff8c00, #ffd91c);
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+/* BUTTON HOVER */
+button:hover {
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* BUTTON CLICK */
+button:active{
+    transform: scale(0.97);
+}

@@ -1,0 +1,5 @@
+D:\Vedant\C# .net\Exam\Assignment 2\PersonalDetailsLib\bin\Debug\PersonalDetailsLib.dll
+D:\Vedant\C# .net\Exam\Assignment 2\PersonalDetailsLib\bin\Debug\PersonalDetailsLib.pdb
+D:\Vedant\C# .net\Exam\Assignment 2\PersonalDetailsLib\obj\Debug\PersonalDetailsLib.csprojResolveAssemblyReference.cache
+D:\Vedant\C# .net\Exam\Assignment 2\PersonalDetailsLib\obj\Debug\PersonalDetailsLib.dll
+D:\Vedant\C# .net\Exam\Assignment 2\PersonalDetailsLib\obj\Debug\PersonalDetailsLib.pdb

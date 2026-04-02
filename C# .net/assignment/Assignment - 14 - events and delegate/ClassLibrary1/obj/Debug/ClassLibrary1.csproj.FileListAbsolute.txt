@@ -1,0 +1,5 @@
+D:\Vedant\C# .net\assignment\Assignnment - 14 - events and delegate\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+D:\Vedant\C# .net\assignment\Assignnment - 14 - events and delegate\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+D:\Vedant\C# .net\assignment\Assignnment - 14 - events and delegate\ClassLibrary1\obj\Debug\ClassLibrary1.csprojResolveAssemblyReference.cache
+D:\Vedant\C# .net\assignment\Assignnment - 14 - events and delegate\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+D:\Vedant\C# .net\assignment\Assignnment - 14 - events and delegate\ClassLibrary1\obj\Debug\ClassLibrary1.pdb

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 150px;
+        }
+
+        .card{
+            display: inline-block;
+            width: 200px;
+            height: 400px;
+            text-align: center;
+            background-color:rgb(255, 246, 246) ;
+            padding: 10px;
+            overflow: hidden;
+            margin: 10px;
+            position: relative;
+        }
+
+        .card:hover{
+            border: 1px solid grey;
+        }
+        .filling{
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background-color: rgb(243, 238, 238);
+            transition: all 1s ease;
+        }
+
+        .card:hover>.filling{
+            height: 100%;
+        }
+
+        .info{
+            position: relative;
+        }
+
+        .name{
+            color: orangered;
+        }
+        .description{
+            margin: 5px;
+            text-align: justify;
+        }
+        .price{
+            color: orangered;
+        }
+
+        .order{
+            background-color: orangered;
+            width: 50%;
+            height: 0px;
+            margin: 0 auto;
+            color: white;
+            overflow: hidden;
+            transition: all 0.5s;
+        }
+        .card:hover .order{
+            padding: 10px;
+            border-radius: 5px;
+            height: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <div class="card">
+            <div class="filling"></div>
+            <div class="info">
+                <img src="biryani.png" alt=" biryani">
+                <h2 class="name">Veg Pulav</h2>
+                <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, ducimus.</p>
+                <h3 class="price">₹ 250</h3>
+                <div class="order">Order Now</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="filling"></div>
+            <div class="info">
+                <img src="kulcha.png" alt=" Kulcha">
+                <h2 class="name">Kulcha</h2>
+                <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, ducimus.</p>
+                <h3 class="price">₹ 25</h3>
+                <div class="order">Order Now</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="filling"></div>
+            <div class="info">
+                <img src="aluPatice.png" alt=" aluPatice">
+                <h2 class="name">Alu Patice</h2>
+                <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, ducimus.</p>
+                <h3 class="price">₹ 30 </h3>
+                <div class="order">Order Now</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="filling"></div>
+            <div class="info">
+                <img src="paneerChillie.png" alt=" paneerChillie">
+                <h2 class="name">Paneer Chilli</h2>
+                <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, ducimus.</p>
+                <h3 class="price">₹ 30 </h3>
+                <div class="order">Order Now</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="filling"></div>
+            <div class="info">
+                <img src="dosa.png" alt=" dosa">
+                <h2 class="name">Dosa</h2>
+                <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, ducimus.</p>
+                <h3 class="price">₹ 30 </h3>
+                <div class="order">Order Now</div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

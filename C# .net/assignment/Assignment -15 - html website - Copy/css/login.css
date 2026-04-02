@@ -1,0 +1,127 @@
+/* *{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: #f0f0f0;
+    width: 500px;
+    height: 50%;
+}
+
+.container form{
+    background-color: green;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container div{
+    width: 100%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+}
+
+input{
+    height: 25px;
+    width:  200px;
+    margin: 20px;
+    padding: 0 10px;
+    border-radius: 10px 0;
+    float: right;
+    border: none;
+
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #00b4db, #0083b0);
+}
+
+/* Form and Container */
+.container{
+    background-color: #fff;
+    width: 350px;
+    padding: 30px;
+    border-radius: 20px 0;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.container form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* HEADING */
+.container h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.container div{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+label{
+    margin-bottom: 5px;
+    font-weight: bold;
+    background-color: white;
+    color: gray;
+    transition: all 0.3s;
+}
+
+input{
+    height: 35px;
+    padding: 0 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+input:focus{
+    border-color: #dbd700;
+}
+
+/* Butto for Log In */
+button{
+    height: 40px;
+    border: none;
+    background: linear-gradient(45deg, #ffb347, #ffd91c); 
+    color: black;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+button:hover{
+    background-color: #f1cb0d;
+}
+
+#signup{
+    margin: 10px auto;
+    text-align: center;
+}

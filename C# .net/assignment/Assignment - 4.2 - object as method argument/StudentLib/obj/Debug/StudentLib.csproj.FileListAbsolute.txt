@@ -1,0 +1,4 @@
+D:\Vedant\C# .net\assignment\assignment4.2\StudentLib\bin\Debug\StudentLib.dll
+D:\Vedant\C# .net\assignment\assignment4.2\StudentLib\bin\Debug\StudentLib.pdb
+D:\Vedant\C# .net\assignment\assignment4.2\StudentLib\obj\Debug\StudentLib.dll
+D:\Vedant\C# .net\assignment\assignment4.2\StudentLib\obj\Debug\StudentLib.pdb

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+/* NAV */
+nav{
+    width: 100%;
+    height: 62px;
+    background-color: #ffd91c;
+    font-family: 'Poppins', sans-serif; /* ⬅️ better font */
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* ⬅️ vertical alignment */
+    padding: 0 20px; /* ⬅️ spacing */
+    position: sticky; /* ⬅️ sticky navbar */
+    top: 0;
+    z-index: 1000;
+    position: relative;
+}
+
+/* LOGO */
+.logo a{
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.logo a:hover{
+    transform: scale(1.05); /* ⬅️ subtle animation */
+}
+
+/* NAV LIST */
+nav ul{
+    list-style: none;
+    display: flex; /* ⬅️ flex instead of float */
+    align-items: center;
+}
+
+/* LIST ITEMS */
+nav ul li{
+    position: relative;
+}
+
+/* LINKS */
+nav ul li a{
+    display: block;
+    padding: 18px 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 16px; /* ⬅️ better sizing */
+    transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+nav ul li a:hover{
+    background: rgba(0,0,0,0.05); /* ⬅️ soft hover */
+    border-radius: 8px;
+}
+
+/* DROPDOWN */
+.dropdown{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white; /* ⬅️ cleaner */
+    min-width: 180px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    opacity: 0;
+    transform: translateY(10px);
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+/* DROPDOWN ITEMS */
+.dropdown li{
+    display: block;
+}
+
+.dropdown li a{
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* SHOW DROPDOWN */
+.products:hover .dropdown{
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+/* RIGHT SECTION */
+.right-section{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* CART ICON */
+nav img{
+    width: 22px;
+}
+
+/* CART INDICATOR */
+.cart-Items-Indicator{
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: orangered;
+    position: absolute;
+    top: 8px;
+    left: 38px;
+    font-size: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ======================= */
+/* nav ul {
+    display: block;
+} */
+.OpenNavigation{
+    display: none;
+}
+
+.showNavigation{
+    left: 0;
+}
+
+/* nav ul{
+    margin: 0;
+    height: 90vh;
+    width: 500px;
+    background-color: #ffd91c;
+    display: block;
+    position: absolute;
+    left: -600px;
+    top: 62px;
+    padding: 20px;
+    transition: all 0.3s;
+} */
+
+/* ======================== media========== */
+
+@media (max-width: 600px) {
+    nav{
+        justify-content: center;
+    }
+    .OpenNavigation{
+        display: block;
+        position: absolute;
+        font-size: 25px;
+        top:20px;
+        left: 20px;
+    }
+
+    nav ul{
+        margin: 0;
+        height: 90vh;
+        width: 500px;
+        background-color: #ffd91c;
+        display: block;
+        position: absolute;
+        left: -600px;
+        top: 62px;
+        padding: 20px;
+        transition: all 0.3s;
+    }
+}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="OpenNavigation">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="logo">
+            Toy Zone
+        </div>
+        <ul id="navigationList">
+            <li><a href="index.html">Home</a></li>
+            <li >
+                <a href="Products.html"> Products </a>
+            </li>
+            <li><a href="aboutUs.html">about us</a></li>
+            <li><a href="contactUs.html"> Contact us</a></li>
+            <li class="floatRight"><a href="">Account</a></li>
+            <li class="floatRight">
+                <a href="Cart.html">
+                    <img src="assets/shopping-cart-svgrepo-com.svg" alt="My Icon">
+                    <div class="cart-Items-Indicator"></div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <script>
+        let OpenNavigation= document.querySelector(".OpenNavigation");
+        let navigationList = document.querySelector("#navigationList");
+        OpenNavigation.addEventListener("click",()=>{
+            navigationList.classList.toggle("showNavigation");
+        })
+    </script>
+</body>
+</html>

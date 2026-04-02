@@ -1,0 +1,5 @@
+D:\Vedant\C# .net\Practice\27-2 pract M\MyTestLib\bin\Debug\MyTestLib.dll
+D:\Vedant\C# .net\Practice\27-2 pract M\MyTestLib\bin\Debug\MyTestLib.pdb
+D:\Vedant\C# .net\Practice\27-2 pract M\MyTestLib\obj\Debug\MyTestLib.csprojResolveAssemblyReference.cache
+D:\Vedant\C# .net\Practice\27-2 pract M\MyTestLib\obj\Debug\MyTestLib.dll
+D:\Vedant\C# .net\Practice\27-2 pract M\MyTestLib\obj\Debug\MyTestLib.pdb

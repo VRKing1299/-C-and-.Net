@@ -1,0 +1,4 @@
+D:\Vedant\C# .net\assignment\Assignnment - 14 - events and delegate\ClassLibrary2\bin\Debug\ClassLibrary2.dll
+D:\Vedant\C# .net\assignment\Assignnment - 14 - events and delegate\ClassLibrary2\bin\Debug\ClassLibrary2.pdb
+D:\Vedant\C# .net\assignment\Assignnment - 14 - events and delegate\ClassLibrary2\obj\Debug\ClassLibrary2.dll
+D:\Vedant\C# .net\assignment\Assignnment - 14 - events and delegate\ClassLibrary2\obj\Debug\ClassLibrary2.pdb

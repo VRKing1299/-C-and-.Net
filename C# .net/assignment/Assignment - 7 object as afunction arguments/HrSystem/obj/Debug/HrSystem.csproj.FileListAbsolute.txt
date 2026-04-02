@@ -1,0 +1,10 @@
+D:\Vedant\C# .net\assignment\Assignment object as afunction arguments\HrSystem\bin\Debug\HrSystem.dll
+D:\Vedant\C# .net\assignment\Assignment object as afunction arguments\HrSystem\bin\Debug\HrSystem.pdb
+D:\Vedant\C# .net\assignment\Assignment object as afunction arguments\HrSystem\obj\Debug\HrSystem.csprojResolveAssemblyReference.cache
+D:\Vedant\C# .net\assignment\Assignment object as afunction arguments\HrSystem\obj\Debug\HrSystem.dll
+D:\Vedant\C# .net\assignment\Assignment object as afunction arguments\HrSystem\obj\Debug\HrSystem.pdb
+D:\Vedant\C# .net\assignment\Assignment - 7 object as afunction arguments\HrSystem\bin\Debug\HrSystem.dll
+D:\Vedant\C# .net\assignment\Assignment - 7 object as afunction arguments\HrSystem\bin\Debug\HrSystem.pdb
+D:\Vedant\C# .net\assignment\Assignment - 7 object as afunction arguments\HrSystem\obj\Debug\HrSystem.csprojResolveAssemblyReference.cache
+D:\Vedant\C# .net\assignment\Assignment - 7 object as afunction arguments\HrSystem\obj\Debug\HrSystem.dll
+D:\Vedant\C# .net\assignment\Assignment - 7 object as afunction arguments\HrSystem\obj\Debug\HrSystem.pdb

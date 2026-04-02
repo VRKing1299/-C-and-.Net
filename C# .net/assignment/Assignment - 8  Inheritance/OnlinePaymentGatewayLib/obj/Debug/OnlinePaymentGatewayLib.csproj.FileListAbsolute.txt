@@ -1,0 +1,10 @@
+D:\Vedant\C# .net\assignment\Assignment Inheritance\OnlinePaymentGatewayLib\bin\Debug\OnlinePaymentGatewayLib.dll
+D:\Vedant\C# .net\assignment\Assignment Inheritance\OnlinePaymentGatewayLib\bin\Debug\OnlinePaymentGatewayLib.pdb
+D:\Vedant\C# .net\assignment\Assignment Inheritance\OnlinePaymentGatewayLib\obj\Debug\OnlinePaymentGatewayLib.csprojResolveAssemblyReference.cache
+D:\Vedant\C# .net\assignment\Assignment Inheritance\OnlinePaymentGatewayLib\obj\Debug\OnlinePaymentGatewayLib.dll
+D:\Vedant\C# .net\assignment\Assignment Inheritance\OnlinePaymentGatewayLib\obj\Debug\OnlinePaymentGatewayLib.pdb
+D:\Vedant\C# .net\assignment\Assignment - 8  Inheritance\OnlinePaymentGatewayLib\bin\Debug\OnlinePaymentGatewayLib.dll
+D:\Vedant\C# .net\assignment\Assignment - 8  Inheritance\OnlinePaymentGatewayLib\bin\Debug\OnlinePaymentGatewayLib.pdb
+D:\Vedant\C# .net\assignment\Assignment - 8  Inheritance\OnlinePaymentGatewayLib\obj\Debug\OnlinePaymentGatewayLib.csprojResolveAssemblyReference.cache
+D:\Vedant\C# .net\assignment\Assignment - 8  Inheritance\OnlinePaymentGatewayLib\obj\Debug\OnlinePaymentGatewayLib.dll
+D:\Vedant\C# .net\assignment\Assignment - 8  Inheritance\OnlinePaymentGatewayLib\obj\Debug\OnlinePaymentGatewayLib.pdb

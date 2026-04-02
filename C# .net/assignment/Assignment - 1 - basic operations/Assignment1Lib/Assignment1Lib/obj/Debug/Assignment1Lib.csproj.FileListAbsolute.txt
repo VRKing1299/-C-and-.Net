@@ -1,0 +1,5 @@
+D:\Vedant\C# .net\assignment\assignment1\Assignment1Lib\Assignment1Lib\bin\Debug\Assignment1Lib.dll
+D:\Vedant\C# .net\assignment\assignment1\Assignment1Lib\Assignment1Lib\bin\Debug\Assignment1Lib.pdb
+D:\Vedant\C# .net\assignment\assignment1\Assignment1Lib\Assignment1Lib\obj\Debug\Assignment1Lib.csprojResolveAssemblyReference.cache
+D:\Vedant\C# .net\assignment\assignment1\Assignment1Lib\Assignment1Lib\obj\Debug\Assignment1Lib.dll
+D:\Vedant\C# .net\assignment\assignment1\Assignment1Lib\Assignment1Lib\obj\Debug\Assignment1Lib.pdb

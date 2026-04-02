@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* =============== HERO ============== */
+.hero {
+    background-image: url(/assets/heroImg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content p{
+    text-shadow: 0 0 5px white,
+                0 0 10px white,
+                0 0 15px white,
+                0 0 20px white;
+}
+
+.hero-content h2 {
+    font-size: 40px;
+    text-shadow: 0 0 5px white,
+                0 0 10px white,
+                0 0 15px white,
+                0 0 20px white;
+}
+
+.hero-content button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    border: none;
+    color: white;
+}
+
+
+/* ============ Features ===============  */
+
+.features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px;
+}
+
+/* common box style */
+.box {
+    width: 300px;
+    padding: 30px;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+}
+
+.box i {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.box h3 {
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.box1 {
+    background-color: #f28b82;
+}
+
+.box2 {
+    background-color: #ff7a18;
+}
+
+.box3 {
+    background-color: #929191;
+}
+
+.review{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #ececec;
+}
+
+.review h1{
+    margin: 20px auto;
+    font-size: 40px;
+}
+.review-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.r-card{
+    background-color: white;
+    color: #222222;
+    font-size: 20px;
+    width: 400px;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 20px;
+    line-height: 35px;
+    text-align: justify;
+}
+
+.r-card h5{
+    color: #ff6b6b;
+}
+
+@media(max-width:1000px){
+    .hero{
+        background-image: url(../assets/heroImg2.png);
+    }
+}
+
+@media(max-width:700px){
+    .hero{
+        background-image: url(../assets/heroImg3.png);
+    }
+}
+
+@media(max-width:506px){
+    .hero{
+        background-image: url(../assets/heroImg4.png);
+    }
+}
+
+@media(max-width:400px){
+    .hero{
+        background-image: url(../assets/heroImg5.png);
+    }
+}

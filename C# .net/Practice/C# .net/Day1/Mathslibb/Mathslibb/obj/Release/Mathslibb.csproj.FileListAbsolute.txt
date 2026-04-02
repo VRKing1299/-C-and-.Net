@@ -1,0 +1,5 @@
+D:\Vedant\C# .net\Practice\Day1\Mathslibb\Mathslibb\bin\Release\Mathslibb.dll
+D:\Vedant\C# .net\Practice\Day1\Mathslibb\Mathslibb\bin\Release\Mathslibb.pdb
+D:\Vedant\C# .net\Practice\Day1\Mathslibb\Mathslibb\obj\Release\Mathslibb.csprojResolveAssemblyReference.cache
+D:\Vedant\C# .net\Practice\Day1\Mathslibb\Mathslibb\obj\Release\Mathslibb.dll
+D:\Vedant\C# .net\Practice\Day1\Mathslibb\Mathslibb\obj\Release\Mathslibb.pdb

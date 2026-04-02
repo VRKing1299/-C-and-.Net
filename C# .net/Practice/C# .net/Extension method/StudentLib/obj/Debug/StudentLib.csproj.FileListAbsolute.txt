@@ -1,0 +1,5 @@
+D:\Vedant\C# .net\Practice\Extension method\StudentLib\bin\Debug\StudentLib.dll
+D:\Vedant\C# .net\Practice\Extension method\StudentLib\bin\Debug\StudentLib.pdb
+D:\Vedant\C# .net\Practice\Extension method\StudentLib\obj\Debug\StudentLib.csprojResolveAssemblyReference.cache
+D:\Vedant\C# .net\Practice\Extension method\StudentLib\obj\Debug\StudentLib.dll
+D:\Vedant\C# .net\Practice\Extension method\StudentLib\obj\Debug\StudentLib.pdb

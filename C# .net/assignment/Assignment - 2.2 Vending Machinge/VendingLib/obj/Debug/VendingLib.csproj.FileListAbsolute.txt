@@ -1,0 +1,10 @@
+D:\Vedant\C# .net\assignment\assignment2.2 Vending Machinge\VendingLib\bin\Debug\VendingLib.dll
+D:\Vedant\C# .net\assignment\assignment2.2 Vending Machinge\VendingLib\bin\Debug\VendingLib.pdb
+D:\Vedant\C# .net\assignment\assignment2.2 Vending Machinge\VendingLib\obj\Debug\VendingLib.csprojResolveAssemblyReference.cache
+D:\Vedant\C# .net\assignment\assignment2.2 Vending Machinge\VendingLib\obj\Debug\VendingLib.dll
+D:\Vedant\C# .net\assignment\assignment2.2 Vending Machinge\VendingLib\obj\Debug\VendingLib.pdb
+D:\Vedant\C# .net\assignment\Assignment - 2.2 Vending Machinge\VendingLib\obj\Debug\VendingLib.csprojResolveAssemblyReference.cache
+D:\Vedant\C# .net\assignment\Assignment - 2.2 Vending Machinge\VendingLib\obj\Debug\VendingLib.dll
+D:\Vedant\C# .net\assignment\Assignment - 2.2 Vending Machinge\VendingLib\obj\Debug\VendingLib.pdb
+D:\Vedant\C# .net\assignment\Assignment - 2.2 Vending Machinge\VendingLib\bin\Debug\VendingLib.dll
+D:\Vedant\C# .net\assignment\Assignment - 2.2 Vending Machinge\VendingLib\bin\Debug\VendingLib.pdb

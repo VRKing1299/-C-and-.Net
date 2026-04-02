@@ -1,0 +1,5 @@
+D:\Vedant\C# .net\assignment\assignment2.1\VendingLib\VendingLib\bin\Debug\VendingLib.dll
+D:\Vedant\C# .net\assignment\assignment2.1\VendingLib\VendingLib\bin\Debug\VendingLib.pdb
+D:\Vedant\C# .net\assignment\assignment2.1\VendingLib\VendingLib\obj\Debug\VendingLib.csprojResolveAssemblyReference.cache
+D:\Vedant\C# .net\assignment\assignment2.1\VendingLib\VendingLib\obj\Debug\VendingLib.dll
+D:\Vedant\C# .net\assignment\assignment2.1\VendingLib\VendingLib\obj\Debug\VendingLib.pdb

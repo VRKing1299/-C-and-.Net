@@ -1,0 +1,8 @@
+D:\Vedant\C# .net\assignment\Assignment object as afunction arguments\BankingLib\bin\Debug\BankingLib.dll
+D:\Vedant\C# .net\assignment\Assignment object as afunction arguments\BankingLib\bin\Debug\BankingLib.pdb
+D:\Vedant\C# .net\assignment\Assignment object as afunction arguments\BankingLib\obj\Debug\BankingLib.dll
+D:\Vedant\C# .net\assignment\Assignment object as afunction arguments\BankingLib\obj\Debug\BankingLib.pdb
+D:\Vedant\C# .net\assignment\Assignment - 7 object as afunction arguments\BankingLib\bin\Debug\BankingLib.dll
+D:\Vedant\C# .net\assignment\Assignment - 7 object as afunction arguments\BankingLib\bin\Debug\BankingLib.pdb
+D:\Vedant\C# .net\assignment\Assignment - 7 object as afunction arguments\BankingLib\obj\Debug\BankingLib.dll
+D:\Vedant\C# .net\assignment\Assignment - 7 object as afunction arguments\BankingLib\obj\Debug\BankingLib.pdb

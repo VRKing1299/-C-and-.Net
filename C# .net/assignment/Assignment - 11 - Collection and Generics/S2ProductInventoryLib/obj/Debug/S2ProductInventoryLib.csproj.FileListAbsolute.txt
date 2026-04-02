@@ -1,0 +1,5 @@
+D:\Vedant\C# .net\assignment\Assignment - 11 - Collection and Generics\S2ProductInventoryLib\bin\Debug\S2ProductInventoryLib.dll
+D:\Vedant\C# .net\assignment\Assignment - 11 - Collection and Generics\S2ProductInventoryLib\bin\Debug\S2ProductInventoryLib.pdb
+D:\Vedant\C# .net\assignment\Assignment - 11 - Collection and Generics\S2ProductInventoryLib\obj\Debug\S2ProductInventoryLib.csprojResolveAssemblyReference.cache
+D:\Vedant\C# .net\assignment\Assignment - 11 - Collection and Generics\S2ProductInventoryLib\obj\Debug\S2ProductInventoryLib.dll
+D:\Vedant\C# .net\assignment\Assignment - 11 - Collection and Generics\S2ProductInventoryLib\obj\Debug\S2ProductInventoryLib.pdb

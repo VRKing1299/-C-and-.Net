@@ -1,0 +1,5 @@
+D:\Vedant\C# .net\assignment\Assignment - 11 - Collection and Generics\S1StudentMarksManagementLib\bin\Debug\S1StudentMarksManagementLib.dll
+D:\Vedant\C# .net\assignment\Assignment - 11 - Collection and Generics\S1StudentMarksManagementLib\bin\Debug\S1StudentMarksManagementLib.pdb
+D:\Vedant\C# .net\assignment\Assignment - 11 - Collection and Generics\S1StudentMarksManagementLib\obj\Debug\S1StudentMarksManagementLib.csprojResolveAssemblyReference.cache
+D:\Vedant\C# .net\assignment\Assignment - 11 - Collection and Generics\S1StudentMarksManagementLib\obj\Debug\S1StudentMarksManagementLib.dll
+D:\Vedant\C# .net\assignment\Assignment - 11 - Collection and Generics\S1StudentMarksManagementLib\obj\Debug\S1StudentMarksManagementLib.pdb

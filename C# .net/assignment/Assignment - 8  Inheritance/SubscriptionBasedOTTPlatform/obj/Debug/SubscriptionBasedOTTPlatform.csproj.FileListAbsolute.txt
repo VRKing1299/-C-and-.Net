@@ -1,0 +1,8 @@
+D:\Vedant\C# .net\assignment\Assignment Inheritance\SubscriptionBasedOTTPlatform\bin\Debug\SubscriptionBasedOTTPlatform.dll
+D:\Vedant\C# .net\assignment\Assignment Inheritance\SubscriptionBasedOTTPlatform\bin\Debug\SubscriptionBasedOTTPlatform.pdb
+D:\Vedant\C# .net\assignment\Assignment Inheritance\SubscriptionBasedOTTPlatform\obj\Debug\SubscriptionBasedOTTPlatform.dll
+D:\Vedant\C# .net\assignment\Assignment Inheritance\SubscriptionBasedOTTPlatform\obj\Debug\SubscriptionBasedOTTPlatform.pdb
+D:\Vedant\C# .net\assignment\Assignment - 8  Inheritance\SubscriptionBasedOTTPlatform\bin\Debug\SubscriptionBasedOTTPlatform.dll
+D:\Vedant\C# .net\assignment\Assignment - 8  Inheritance\SubscriptionBasedOTTPlatform\bin\Debug\SubscriptionBasedOTTPlatform.pdb
+D:\Vedant\C# .net\assignment\Assignment - 8  Inheritance\SubscriptionBasedOTTPlatform\obj\Debug\SubscriptionBasedOTTPlatform.dll
+D:\Vedant\C# .net\assignment\Assignment - 8  Inheritance\SubscriptionBasedOTTPlatform\obj\Debug\SubscriptionBasedOTTPlatform.pdb

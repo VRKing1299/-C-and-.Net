@@ -1,0 +1,25 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
+
+namespace DataConnectionLib
+{
+    /// <summary>
+    /// this class is used to fecth connection string and return connection object
+    /// </summary>
+    public class DataConnection
+    {
+        public static SqlConnection GetDataConnection()
+        {
+            string strCon = ConfigurationManager.ConnectionStrings["MyCon"].ConnectionString;
+            SqlConnection con = new SqlConnection(strCon);
+            return con;
+
+        }
+    }
+}

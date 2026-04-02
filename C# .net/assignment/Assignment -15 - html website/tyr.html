@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToyLand | Premium Toys for Kids</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Global Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #fcfcfc;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* =============== NAVIGATION ============== */
+        header {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 10%;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #ff6b6b;
+            text-decoration: none;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #444;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ff6b6b;
+        }
+
+        .nav-icons {
+            display: flex;
+            gap: 20px;
+            font-size: 18px;
+        }
+
+        /* =============== HERO ============== */
+        .hero {
+            /* Replace with a real URL for full effect */
+            background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), 
+                        url('https://images.unsplash.com/photo-1566859330441-3bca4702ee2e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            height: 80vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content h2 {
+            font-size: 56px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .hero-content p {
+            font-size: 20px;
+            margin-bottom: 25px;
+            font-weight: 300;
+        }
+
+        .hero-content button {
+            padding: 15px 40px;
+            background-color: #ff6b6b;
+            border: none;
+            border-radius: 50px;
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+        }
+
+        .hero-content button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 107, 107, 0.6);
+        }
+
+        /* ============ FEATURES (TRUST) ===============  */
+        .features {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 80px 10%;
+            background: white;
+        }
+
+        .box {
+            flex: 1;
+            min-width: 250px;
+            padding: 40px 30px;
+            border-radius: 20px;
+            color: white;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .box:hover {
+            transform: translateY(-10px);
+        }
+
+        .box i { font-size: 40px; margin-bottom: 20px; }
+        .box h3 { font-size: 18px; margin-bottom: 15px; }
+        .box p { font-size: 14px; opacity: 0.9; }
+
+        .box1 { background: #f28b82; }
+        .box2 { background: #ff7a18; }
+        .box3 { background: #4ecdc4; } /* Changed to a fresh teal for variety */
+
+        /* ============ PRODUCT GRID ===============  */
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title h2 { font-size: 32px; color: #222; }
+        .section-title div { 
+            width: 50px; height: 3px; background: #ff6b6b; margin: 10px auto; 
+        }
+
+        .product-section { padding: 80px 10%; }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: 0.3s;
+            position: relative;
+        }
+
+        .product-card:hover {
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .product-img {
+            height: 250px;
+            background: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            color: #ccc;
+        }
+
+        .product-info { padding: 20px; }
+        .product-info h4 { margin-bottom: 10px; font-size: 18px; }
+        .product-info .price { color: #ff6b6b; font-weight: 700; font-size: 20px; }
+        
+        .add-to-cart {
+            width: 100%;
+            padding: 10px;
+            margin-top: 15px;
+            border: 1px solid #ff6b6b;
+            background: transparent;
+            color: #ff6b6b;
+            font-weight: 600;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .add-to-cart:hover {
+            background: #ff6b6b;
+            color: white;
+        }
+
+        /* ============ TESTIMONIALS ===============  */
+        .testimonials {
+            background: #f9f9f9;
+            padding: 80px 10%;
+            text-align: center;
+        }
+
+        .testimonial-container {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .t-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            width: 350px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+        }
+
+        .t-card p { font-style: italic; color: #666; margin-bottom: 20px; }
+        .t-card h5 { font-weight: 700; color: #ff6b6b; }
+
+        /* ============ FOOTER ===============  */
+        footer {
+            background: #222;
+            color: white;
+            padding: 60px 10% 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 { margin-bottom: 20px; color: #ff6b6b; }
+        .footer-col ul { list-style: none; }
+        .footer-col ul li { margin-bottom: 10px; opacity: 0.7; cursor: pointer; }
+        .footer-col ul li:hover { opacity: 1; color: #ff6b6b; }
+
+        .newsletter input {
+            padding: 10px;
+            border-radius: 5px 0 0 5px;
+            border: none;
+            width: 70%;
+        }
+
+        .newsletter button {
+            padding: 10px;
+            background: #ff6b6b;
+            border: none;
+            color: white;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #444;
+            font-size: 13px;
+            opacity: 0.6;
+        }
+
+        .message {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #333;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 5px;
+            display: none; /* Hidden by default */
+            z-index: 2000;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#" class="logo">TOYLAND 🧸</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Best Sellers</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-user"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Fun Starts Here 🎈</h2>
+            <p>Discover safe, educational, and premium toys for your little ones.</p>
+            <button>Explore Collection</button>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="box box1">
+            <i class="fa-solid fa-shield-heart"></i>
+            <h3>SAFE & CERTIFIED</h3>
+            <p>Non-toxic, eco-friendly materials that meet international safety standards.</p>
+        </div>
+        <div class="box box2">
+            <i class="fa-solid fa-bolt"></i>
+            <h3>EXPRESS SHIPPING</h3>
+            <p>Order before 2 PM and we'll ship it the same day. Tracking included!</p>
+        </div>
+        <div class="box box3">
+            <i class="fa-solid fa-rotate-left"></i>
+            <h3>HASSLE-FREE RETURNS</h3>
+            <p>Not happy? Return within 30 days for a full refund. No questions asked.</p>
+        </div>
+    </section>
+
+    <section class="product-section">
+        <div class="section-title">
+            <h2>Popular This Week</h2>
+            <div></div>
+        </div>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-img"><i class="fa-solid fa-car"></i></div>
+                <div class="product-info">
+                    <h4>Wooden Racing Car</h4>
+                    <p class="price">$24.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img" style="background:#e8f4fd"><i class="fa-solid fa-robot" style="color:#2196f3"></i></div>
+                <div class="product-info">
+                    <h4>Smart Learning Robot</h4>
+                    <p class="price">$45.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img" style="background:#fff0f0"><i class="fa-solid fa-puzzle-piece" style="color:#f44336"></i></div>
+                <div class="product-info">
+                    <h4>Shape Sorter Puzzle</h4>
+                    <p class="price">$19.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img" style="background:#f0fff4"><i class="fa-solid fa-teddy-bear" style="color:#4caf50"></i></div>
+                <div class="product-info">
+                    <h4>Organic Cotton Bear</h4>
+                    <p class="price">$32.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="section-title">
+            <h2>What Parents Say</h2>
+            <div></div>
+        </div>
+        <div class="testimonial-container">
+            <div class="t-card">
+                <p>"The quality of the wooden toys is exceptional. My son plays with them every day and they still look brand new!"</p>
+                <h5>- Sarah J.</h5>
+            </div>
+            <div class="t-card">
+                <p>"Fast delivery and beautiful packaging. It made for a perfect birthday gift. Will definitely buy again!"</p>
+                <h5>- Mark T.</h5>
+            </div>
+            <div class="t-card">
+                <p>"Finally a store that cares about safety as much as I do. The non-toxic certifications give me peace of mind."</p>
+                <h5>- Emily R.</h5>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>ToyLand</h4>
+                <p style="opacity: 0.7; font-size: 14px;">Bringing joy and imagination to children worldwide through curated, safe, and sustainable play things.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li>Track Order</li>
+                    <li>Shipping Policy</li>
+                    <li>Gift Cards</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+            <div class="footer-col newsletter">
+                <h4>Join the Club</h4>
+                <p style="font-size: 13px; margin-bottom: 10px; opacity: 0.7;">Get 10% off your first order!</p>
+                <input type="email" placeholder="Your Email">
+                <button>Go</button>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2024 ToyLand Premium Store. All Rights Reserved.
+        </div>
+    </footer>
+
+    <div class="message">
+        This is an alert message!
+    </div>
+
+    <script>
+        // Simple script to show/hide the message
+        window.onload = function() {
+            const msg = document.querySelector('.message');
+            // Show message for a few seconds
+            msg.style.display = 'block';
+            setTimeout(() => {
+                msg.style.display = 'none';
+            }, 3000);
+        }
+    </script>
+</body>
+</html>

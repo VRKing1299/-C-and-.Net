@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/payment.css">
+</head>
+<body>
+    <section class="payment-page">
+        <form >
+            <div class="input-group">
+                <input type="text" name="name" id="name" required>
+                <label for="name">Card Holder Name</label>
+            </div>
+
+            <div class="input-group">
+                <input type="number" name="Number" id="Number" required>
+                <label for="Number">Card Number</label>
+            </div>
+
+            <div class="input-group">
+                <input type="text" name="CVV" id="CVV" required>
+                <label for="CVV">CVV</label>
+            </div>
+
+            <div class="input-group">
+                <input type="text" name="MMYY" id="MMYY" required>
+                <label for="MMYY">MM/YY</label>
+            </div>
+
+            <div class="totalPayment"> </div>
+
+            <button type="submit" id="btnpay">pay</button>
+        </form>
+    </section>
+    <script src="./js/Payment.js"></script>
+</body>
+</html>

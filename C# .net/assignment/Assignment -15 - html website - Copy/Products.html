@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToyLand Products</title>
+    <link rel="stylesheet" href="./css/Products.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<header>
+    
+    <!-- <h1 id="logo">ToyLand</h1> -->
+</header>
+<section class="hero">
+    <h2>Our Toys Collection 🧸</h2>
+</section>
+
+<!-- FILTER -->
+<section class="filter">
+    <select id="categoryFilter">
+    </select>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products" id="productContainer">
+
+    <div class="product-card" >
+        <img src="./assets/products/Mazda MX-5 Miata.jfif">
+        <h3>RC Car</h3>
+        <p>₹999</p>
+        <button onclick="AddToCart(1)">Add to Cart</button>
+    </div>
+
+    <div class="product-card" >
+        <div class="image-Container">
+            <img src="./assets/heroImg.jpg">
+        </div>
+        <h3>Teddy Bear</h3>
+        <p>₹499</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card" >
+        <img src="https://via.placeholder.com/200">
+        <h3>Building Blocks</h3>
+        <p>₹799</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card" >
+        <img src="https://via.placeholder.com/200">
+        <h3>Drone Toy</h3>
+        <p>₹1499</p>
+        <button>Add to Cart</button>
+    </div>
+
+</section>
+
+<!-- Footer section -->
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-section">
+                <h2 class="footer-logo">Toy Zone 🧸</h2>
+                <p>Bringing joy, creativity, and fun to every home.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Products.html">Products</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="contactUs.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Toy Zone. All rights reserved.</p>
+        </div>
+    </footer>
+
+<script src="./js/Products.js"></script>
+<script src="./js/navigation.js"></script>
+
+</body>
+</html>

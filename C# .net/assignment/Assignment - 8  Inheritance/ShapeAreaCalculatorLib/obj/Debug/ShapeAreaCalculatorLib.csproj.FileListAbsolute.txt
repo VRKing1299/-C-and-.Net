@@ -1,0 +1,15 @@
+C:\Users\Vedant.Rajput\Documents\Visual Studio 2015\Projects\Assignment Inheritance\ShapeAreaCalculatorLib\bin\Debug\ShapeAreaCalculatorLib.dll
+C:\Users\Vedant.Rajput\Documents\Visual Studio 2015\Projects\Assignment Inheritance\ShapeAreaCalculatorLib\bin\Debug\ShapeAreaCalculatorLib.pdb
+C:\Users\Vedant.Rajput\Documents\Visual Studio 2015\Projects\Assignment Inheritance\ShapeAreaCalculatorLib\obj\Debug\ShapeAreaCalculatorLib.csprojResolveAssemblyReference.cache
+C:\Users\Vedant.Rajput\Documents\Visual Studio 2015\Projects\Assignment Inheritance\ShapeAreaCalculatorLib\obj\Debug\ShapeAreaCalculatorLib.dll
+C:\Users\Vedant.Rajput\Documents\Visual Studio 2015\Projects\Assignment Inheritance\ShapeAreaCalculatorLib\obj\Debug\ShapeAreaCalculatorLib.pdb
+D:\Vedant\C# .net\assignment\Assignment Inheritance\ShapeAreaCalculatorLib\bin\Debug\ShapeAreaCalculatorLib.dll
+D:\Vedant\C# .net\assignment\Assignment Inheritance\ShapeAreaCalculatorLib\bin\Debug\ShapeAreaCalculatorLib.pdb
+D:\Vedant\C# .net\assignment\Assignment Inheritance\ShapeAreaCalculatorLib\obj\Debug\ShapeAreaCalculatorLib.csprojResolveAssemblyReference.cache
+D:\Vedant\C# .net\assignment\Assignment Inheritance\ShapeAreaCalculatorLib\obj\Debug\ShapeAreaCalculatorLib.dll
+D:\Vedant\C# .net\assignment\Assignment Inheritance\ShapeAreaCalculatorLib\obj\Debug\ShapeAreaCalculatorLib.pdb
+D:\Vedant\C# .net\assignment\Assignment - 8  Inheritance\ShapeAreaCalculatorLib\bin\Debug\ShapeAreaCalculatorLib.dll
+D:\Vedant\C# .net\assignment\Assignment - 8  Inheritance\ShapeAreaCalculatorLib\bin\Debug\ShapeAreaCalculatorLib.pdb
+D:\Vedant\C# .net\assignment\Assignment - 8  Inheritance\ShapeAreaCalculatorLib\obj\Debug\ShapeAreaCalculatorLib.csprojResolveAssemblyReference.cache
+D:\Vedant\C# .net\assignment\Assignment - 8  Inheritance\ShapeAreaCalculatorLib\obj\Debug\ShapeAreaCalculatorLib.dll
+D:\Vedant\C# .net\assignment\Assignment - 8  Inheritance\ShapeAreaCalculatorLib\obj\Debug\ShapeAreaCalculatorLib.pdb

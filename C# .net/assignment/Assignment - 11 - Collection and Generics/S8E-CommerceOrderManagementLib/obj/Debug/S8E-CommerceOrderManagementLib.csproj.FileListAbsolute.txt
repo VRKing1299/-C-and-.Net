@@ -1,0 +1,5 @@
+D:\Vedant\C# .net\assignment\Assignment - 11 - Collection and Generics\S8E-CommerceOrderManagementLib\bin\Debug\S8E-CommerceOrderManagementLib.dll
+D:\Vedant\C# .net\assignment\Assignment - 11 - Collection and Generics\S8E-CommerceOrderManagementLib\bin\Debug\S8E-CommerceOrderManagementLib.pdb
+D:\Vedant\C# .net\assignment\Assignment - 11 - Collection and Generics\S8E-CommerceOrderManagementLib\obj\Debug\S8E-CommerceOrderManagementLib.csprojResolveAssemblyReference.cache
+D:\Vedant\C# .net\assignment\Assignment - 11 - Collection and Generics\S8E-CommerceOrderManagementLib\obj\Debug\S8E-CommerceOrderManagementLib.dll
+D:\Vedant\C# .net\assignment\Assignment - 11 - Collection and Generics\S8E-CommerceOrderManagementLib\obj\Debug\S8E-CommerceOrderManagementLib.pdb

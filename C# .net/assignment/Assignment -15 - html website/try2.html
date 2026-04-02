@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* GRID */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+    padding: 20px;
+}
+
+/* CARD */
+.product-card {
+    background: rgba(255,255,255,0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 18px;
+    padding: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+/* HOVER */
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* IMAGE WRAPPER */
+.image-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+/* IMAGE */
+.image-wrapper img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+/* IMAGE ZOOM */
+.product-card:hover img {
+    transform: scale(1.08);
+}
+
+/* CATEGORY BADGE */
+.category {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    font-size: 11px;
+    padding: 4px 8px;
+    border-radius: 20px;
+}
+
+/* TITLE */
+.product-card h3 {
+    margin: 10px 0 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* PRICE */
+.price {
+    color: #ff6b6b;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* BUTTON */
+.product-card button {
+    width: 100%;
+    margin-top: 12px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #06beb2, #48b1bf);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* BUTTON HOVER */
+.product-card button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+    </style>
+</head>
+<body>
+    <section class="products" id="productContainer"></section>
+
+<script>
+
+    let productsData = [
+    {id:1, name:"Mazda MX-5 Miata", category:"Hot Wheels", price:150, image:"./assets/products/Mazda MX-5 Miata.jfif"},
+    {id:2, name:"Lamborghini Huracan", category:"Hot Wheels", price:180, image:"./assets/products/Lamborghini Huracan.jfif"},
+    {id:3, name:"Bugatti Chiron", category:"Hot Wheels", price:200, image:"./assets/products/Bugatti Chiron.jfif"},
+    {id:4, name:"Ford Mustang GT", category:"Hot Wheels", price:160, image:"./assets/products/Ford Mustang GT.jfif"},
+    {id:5, name:"Nissan Skyline R34", category:"Hot Wheels", price:220, image:"./assets/products/Nissan Skyline R34.jfif"},
+
+    {id:6, name:"RC Drift Car", category:"RC", price:1200, image:"./assets/products/RC Drift Car.jfif"},
+    {id:7, name:"RC Monster Truck", category:"RC", price:1500, image:"./assets/products/RC Monster Truck.jfif"},
+    {id:8, name:"RC Helicopter", category:"RC", price:1800, image:"./assets/products/RC Helicopter.jfif"},
+    {id:9, name:"RC Racing Bike", category:"RC", price:1300, image:"./assets/products/RC Racing Bike.jfif"},
+    {id:10, name:"RC Offroad Jeep", category:"RC", price:1700, image:"./assets/products/RC Offroad Jeep.jfif"},
+
+    {id:11, name:"Teddy Bear Large", category:"Soft Toys", price:500, image:"./assets/products/Teddy Bear Large.jfif"},
+    {id:12, name:"Cute Panda Plush", category:"Soft Toys", price:450, image:"./assets/products/Cute Panda Plush.jfif"},
+    {id:13, name:"Horse Soft Toy", category:"Soft Toys", price:600, image:"./assets/products/Horse Soft Toy.jfif"},
+    {id:14, name:"Baby Elephant Plush", category:"Soft Toys", price:550, image:"./assets/products/Baby Elephant Plush.jfif"},
+    {id:15, name:"Soft Toy Dog", category:"Soft Toys", price:400, image:"./assets/products/Soft Toy Dog.jfif"},
+
+    {id:16, name:"Iron Man Figure", category:"Action Figures", price:800, image:"./assets/products/Iron Man Figure.jfif"},
+    {id:17, name:"Spider-Man Figure", category:"Action Figures", price:750, image:"./assets/products/Spider-Man Figure.jfif"},
+    {id:18, name:"Batman Figure", category:"Action Figures", price:850, image:"./assets/products/Batman Figure.jfif"},
+    {id:19, name:"Naruto Figure", category:"Action Figures", price:900, image:"./assets/products/Naruto Figure.jfif"},
+    {id:20, name:"Dragon Ball Goku Figure", category:"Action Figures", price:950, image:"./assets/products/Dragon Ball Goku Figure.jfif"}
+];
+    let container = document.getElementById("productContainer");
+
+function renderProducts(data) {
+    container.innerHTML = "";
+
+    data.forEach(prod => {
+        let card = `
+        <div class="product-card">
+            <div class="image-wrapper">
+                <img src="${prod.image}" alt="${prod.name}">
+                <span class="category">${prod.category}</span>
+            </div>
+
+            <h3>${prod.name}</h3>
+            <p class="price">₹${prod.price}</p>
+
+            <button onclick="AddToCart(${prod.id})">
+                🛒 Add to Cart
+            </button>
+        </div>
+        `;
+
+        container.innerHTML += card;
+    });
+}
+
+// initial render
+renderProducts(productsData);
+</script>
+</body>
+</html>

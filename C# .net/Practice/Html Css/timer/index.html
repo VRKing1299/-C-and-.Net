@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #message{
+            position: fixed;
+            top: 0;
+            left: 200px;
+            background-color: orangered;
+            padding: 10px;
+            display: none;
+            transition: all 1s ease;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1> <span id="hours">0</span> : <span id="minutes">0</span> : <span id="seconds">0</span></h1>
+    <button id="start"> start</button>
+    <button id="clear"> clear </button>
+
+    <div id="message"> timer is allready running </div>
+
+    <script>
+        let eleHours=document.getElementById("hours");
+        let eleMinutes = document.getElementById("minutes");
+        let eleSeconds = document.getElementById("seconds");
+        let start = document.getElementById("start");
+        let stopbtn = document.getElementById("clear")
+        let msg = document.getElementById("message");
+
+        const seconds = 59
+        const minutes = 59
+        const hours = 12
+
+        let isRunning= false
+        let s=0;
+        let m=0;
+        let h=0;
+
+        let timer;
+        function timerfunc(){
+            timer = setInterval(()=>{
+                eleHours.innerText=h;
+                eleMinutes.innerText=m;
+                eleSeconds.innerText=s;
+
+                s++
+                if(s>seconds){
+                    s=0;
+                    m++
+                    if(m>minutes){
+                        m=0;
+                        h++;
+                    }
+                }
+            },1000)
+        }
+
+        function StopTimer(){
+            clearInterval(timer);
+        }
+        start.addEventListener("click",()=>{
+            if(!isRunning){
+                timerfunc();
+                isRunning=true;
+            }else if(isRunning){
+                msg.style.display="block";
+                setTimeout(() => {
+                    msg.style.display="none";
+                }, 2000);
+            }
+        });
+
+        stopbtn.addEventListener("click",()=>{
+            clearInterval(timer);
+            isRunning=false;
+            timer=null;
+            s=0;
+            h=0;
+            m=0;
+            eleHours.innerText=h;
+            eleMinutes.innerText=m;
+            eleSeconds.innerText=s;
+        })
+        
+    </script>
+</body>
+</html>

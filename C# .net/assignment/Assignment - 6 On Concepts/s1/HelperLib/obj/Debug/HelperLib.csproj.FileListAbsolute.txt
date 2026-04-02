@@ -1,0 +1,10 @@
+D:\Vedant\C# .net\assignment\Assignment On Concepts\s1\HelperLib\bin\Debug\HelperLib.dll
+D:\Vedant\C# .net\assignment\Assignment On Concepts\s1\HelperLib\bin\Debug\HelperLib.pdb
+D:\Vedant\C# .net\assignment\Assignment On Concepts\s1\HelperLib\obj\Debug\HelperLib.csprojResolveAssemblyReference.cache
+D:\Vedant\C# .net\assignment\Assignment On Concepts\s1\HelperLib\obj\Debug\HelperLib.dll
+D:\Vedant\C# .net\assignment\Assignment On Concepts\s1\HelperLib\obj\Debug\HelperLib.pdb
+D:\Vedant\C# .net\assignment\Assignment - 6 On Concepts\s1\HelperLib\bin\Debug\HelperLib.dll
+D:\Vedant\C# .net\assignment\Assignment - 6 On Concepts\s1\HelperLib\bin\Debug\HelperLib.pdb
+D:\Vedant\C# .net\assignment\Assignment - 6 On Concepts\s1\HelperLib\obj\Debug\HelperLib.csprojResolveAssemblyReference.cache
+D:\Vedant\C# .net\assignment\Assignment - 6 On Concepts\s1\HelperLib\obj\Debug\HelperLib.dll
+D:\Vedant\C# .net\assignment\Assignment - 6 On Concepts\s1\HelperLib\obj\Debug\HelperLib.pdb

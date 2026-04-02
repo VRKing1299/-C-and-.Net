@@ -1,0 +1,5 @@
+D:\Vedant\C# .net\assignment\Assignment Inheritance\HospitalManagementSystemLib\bin\Debug\HospitalManagementSystemLib.dll
+D:\Vedant\C# .net\assignment\Assignment Inheritance\HospitalManagementSystemLib\bin\Debug\HospitalManagementSystemLib.pdb
+D:\Vedant\C# .net\assignment\Assignment Inheritance\HospitalManagementSystemLib\obj\Debug\HospitalManagementSystemLib.csprojResolveAssemblyReference.cache
+D:\Vedant\C# .net\assignment\Assignment Inheritance\HospitalManagementSystemLib\obj\Debug\HospitalManagementSystemLib.dll
+D:\Vedant\C# .net\assignment\Assignment Inheritance\HospitalManagementSystemLib\obj\Debug\HospitalManagementSystemLib.pdb

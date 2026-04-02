@@ -1,0 +1,5 @@
+D:\Vedant\C# .net\Practice\09-03 pract Collections\IcompareVSicomparer\bin\Debug\IcompareVSicomparer.dll
+D:\Vedant\C# .net\Practice\09-03 pract Collections\IcompareVSicomparer\bin\Debug\IcompareVSicomparer.pdb
+D:\Vedant\C# .net\Practice\09-03 pract Collections\IcompareVSicomparer\obj\Debug\IcompareVSicomparer.csprojResolveAssemblyReference.cache
+D:\Vedant\C# .net\Practice\09-03 pract Collections\IcompareVSicomparer\obj\Debug\IcompareVSicomparer.dll
+D:\Vedant\C# .net\Practice\09-03 pract Collections\IcompareVSicomparer\obj\Debug\IcompareVSicomparer.pdb

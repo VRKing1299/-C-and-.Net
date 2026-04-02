@@ -1,0 +1,5 @@
+D:\Vedant\C# .net\assignment\Assignment - 11 - Collection and Generics\S5EmployeeRecordsLib\bin\Debug\S5EmployeeRecordsLib.dll
+D:\Vedant\C# .net\assignment\Assignment - 11 - Collection and Generics\S5EmployeeRecordsLib\bin\Debug\S5EmployeeRecordsLib.pdb
+D:\Vedant\C# .net\assignment\Assignment - 11 - Collection and Generics\S5EmployeeRecordsLib\obj\Debug\S5EmployeeRecordsLib.csprojResolveAssemblyReference.cache
+D:\Vedant\C# .net\assignment\Assignment - 11 - Collection and Generics\S5EmployeeRecordsLib\obj\Debug\S5EmployeeRecordsLib.dll
+D:\Vedant\C# .net\assignment\Assignment - 11 - Collection and Generics\S5EmployeeRecordsLib\obj\Debug\S5EmployeeRecordsLib.pdb

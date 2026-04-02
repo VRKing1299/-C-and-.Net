@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* BODY */
+body {
+    padding: 0;
+    margin:0;
+    font-family: Arial;
+    background-color: #f5f5f5;
+}
+
+/* HEADER */
+header{
+    margin: 0;
+    padding: 0;
+}
+
+/* HERO */
+.hero{
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+/* FILTER */
+.filter {
+    text-align: center;
+    margin: 20px;
+}
+
+.filter select {
+    padding: 8px;
+    margin: 5px;
+}
+
+/* PRODUCTS GRID */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* CARD */
+.product-card {
+    background-color: white;
+    width: 230px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s;
+    position: relative;
+}
+
+/* IMAGE */
+
+.image-Container{
+    width: 230px;
+    height: 230px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.product-card img {
+    width: 100%;
+    transition: all 0.3s;
+}
+.product-card:hover img {
+    transform: scale(1.1);
+}
+
+/* CATEGORY BADGE */
+.category {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    font-size: 11px;
+    padding: 4px 8px;
+    border-radius: 20px;
+}
+
+/* TITLE */
+.product-card h3 {
+    margin: 10px 0;
+}
+
+/* PRICE */
+.product-card p {
+    color: #ff6b6b;
+    font-weight: bold;
+}
+
+/* BUTTON */
+.product-card button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #06beb2;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    transition: all 0.3s;
+    width: 100%;
+}
+.product-card button:hover{
+    transform: scale(1.05);
+}
+.product-card button:active{
+    background-color: #02968c;
+}
+
+/* SIMPLE HOVER */
+.product-card:hover {
+    transform: scale(1.03);
+}
+
+/* FILTER CONTAINER */
+.filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+
+/* SELECT BOX */
+.filter select {
+    padding: 12px 18px;
+    border-radius: 30px;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    padding: 10px;
+
+    transition: all 0.3s ease;
+}
+/* FOCUS EFFECT */
+.filter select:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(6, 190, 178, 0.3);
+}
+
+.filter select option {
+    background-color: white;
+    border-radius: 10px;
+    color: #333;
+    padding: 10px;
+    font-size: 14px;
+}
+

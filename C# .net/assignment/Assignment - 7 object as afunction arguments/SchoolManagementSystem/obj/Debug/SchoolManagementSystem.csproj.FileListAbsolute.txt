@@ -1,0 +1,8 @@
+D:\Vedant\C# .net\assignment\Assignment object as afunction arguments\SchoolManagementSystem\bin\Debug\SchoolManagementSystem.dll
+D:\Vedant\C# .net\assignment\Assignment object as afunction arguments\SchoolManagementSystem\bin\Debug\SchoolManagementSystem.pdb
+D:\Vedant\C# .net\assignment\Assignment object as afunction arguments\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.dll
+D:\Vedant\C# .net\assignment\Assignment object as afunction arguments\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.pdb
+D:\Vedant\C# .net\assignment\Assignment - 7 object as afunction arguments\SchoolManagementSystem\bin\Debug\SchoolManagementSystem.dll
+D:\Vedant\C# .net\assignment\Assignment - 7 object as afunction arguments\SchoolManagementSystem\bin\Debug\SchoolManagementSystem.pdb
+D:\Vedant\C# .net\assignment\Assignment - 7 object as afunction arguments\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.dll
+D:\Vedant\C# .net\assignment\Assignment - 7 object as afunction arguments\SchoolManagementSystem\obj\Debug\SchoolManagementSystem.pdb
