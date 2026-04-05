@@ -1,0 +1,25 @@
+<html>
+<head>
+    
+    <title>Before</title>
+    <script src="jquery-3.6.0.js">
+    
+    </script>
+   
+</head>
+<body>
+    
+   Source :    <input type="text" id="txt1"><br>
+   Destination:<input type="text" id="txt2">
+   
+   
+    <script>
+     $("#txt1").change(function()
+     {
+         var a=$("#txt1").val();// get the value
+         $("#txt2").val(a);//set the value
+     });
+        </script>
+    
+</body>
+</html>

@@ -55,18 +55,23 @@ if(!loggedIN){
 
 // selecting the cart Items Indicator from html document
 let cartItemsIndicator = document.querySelector(".cart-Items-Indicator");
-//  getting the cart array from local storage in not present the empty array
-let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
 
 // calculate total quantity of the products in the cart
-let totalItems = cart.reduce((sum, item) => sum + item.prodQuant, 0);
+function DisplayNumberOfItemsInCart(){
 
-if(totalItems > 0){
-    cartItemsIndicator.classList.remove("cart-Items-Indicator-display");
-    cartItemsIndicator.innerHTML = totalItems;
-} else {
-    cartItemsIndicator.classList.add("cart-Items-Indicator-display");
+    //  getting the cart array from local storage in not present the empty array
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let totalItems = cart.reduce((sum, item) => sum + item.prodQuant, 0);
+
+    if(totalItems > 0){
+        cartItemsIndicator.classList.remove("cart-Items-Indicator-display");
+        cartItemsIndicator.innerHTML = totalItems;
+    } else {
+        cartItemsIndicator.classList.add("cart-Items-Indicator-display");
+    }
 }
+DisplayNumberOfItemsInCart();
 
 //opening and closing the navigation
 let OpenNavigation= document.querySelector(".OpenNavigation");

@@ -1,0 +1,42 @@
+<html>
+<head>
+    
+    <title>Before</title>
+    <script src="jquery-3.6.0.js">
+    
+    </script>
+   
+</head>
+<body>
+   <h2>Select bank from list</h2>
+ <select id="dropdownlist1">
+     <option value="ICICI">ICIC Bank</option>
+     <option value="IDBI">IDBI Bank</option>
+     <option value="Canara">Canara Bank</option>
+     <option value="HSBC">HSBC Bank</option>
+ </select>
+ <br>
+ <hr>
+ <h3>Display Value</h3>
+ <br>
+ <span id="s1"></span>
+ <br>
+ <hr>
+ <h3>Disply Selected Name</h3>
+ <br>
+
+ <span id="s2"></span>
+    <script>
+      //  $("#s1").hide();
+     $("#dropdownlist1").change(function()
+     {
+        var a=$("#dropdownlist1").val();
+        $("#s1").html(a);
+        var b=$("#dropdownlist1 option:selected").html();
+        $("#s2").html(b); 
+     });
+     
+        </script>
+    
+</body>
+</html>

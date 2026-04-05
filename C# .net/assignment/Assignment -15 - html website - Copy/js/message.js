@@ -1,4 +1,4 @@
-// this is used to display a pop up message 
+// this is used to display a pop up message  
 let message = document.querySelector(".message");
 
 function DisplayMessage(mess){

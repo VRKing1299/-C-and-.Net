@@ -7,7 +7,7 @@
 
 /* =============== HERO ============== */
 .hero {
-    background-image: url(/assets/heroImg.jpg);
+    background-image: url(../assets/heroImg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -39,8 +39,15 @@
     margin-top: 10px;
     padding: 10px 20px;
     background-color: #ff6b6b;
+    border-radius: 5px;
     border: none;
     color: white;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.hero-content button:hover {
+   transform: scale(1.1);
 }
 
 

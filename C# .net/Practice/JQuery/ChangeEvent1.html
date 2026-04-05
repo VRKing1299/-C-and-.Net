@@ -1,0 +1,50 @@
+<html>
+<head>
+    
+    <title>Before</title>
+    <script src="jquery-3.6.0.js">
+    
+    </script>
+   
+</head>
+<body>
+   <h2>Select your fav Game</h2>
+  Circket:<input type="checkbox" id="chk1" name="g1">
+  <br>
+  Footbool:<input type="checkbox" id="chk2" name="g1">
+  <br>  
+  <span id="s1"></span>
+  <br>
+  <span id="s2"></span>
+  <br>
+    <script>
+      //  $("#s1").hide();
+     $("#chk1").change(function()
+     {
+        //  console.log(("#chk1")[0].checked);
+         if($("#chk1")[0].checked)
+         {
+            // $("#chk2")[0].checked=true;
+            $("#s1").html("Cricket"); 
+         }
+         else
+         {
+            $("#s1").html(" "); 
+         }
+     });
+     $("#chk2").change(function()
+     {
+        if($("#chk2")[0].checked)
+         {
+            $("#s2").html("Football"); 
+         }
+         else
+         {
+            $("#s2").html(" "); 
+         }
+     });
+   
+        </script>
+    
+</body>
+</html>

@@ -62,6 +62,7 @@ function AddToCart(id){
     }
 
     localStorage.setItem("cart", JSON.stringify(cart));
+    DisplayNumberOfItemsInCart();
     // console.log(cart);
     // location.reload();
 }
