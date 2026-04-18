@@ -1,0 +1,42 @@
+
+body {
+    background-image: url("../Assets/download.jfif") !important;
+    background-repeat: no-repeat;
+    background-size: cover;       
+    background-position: center;  
+}
+
+
+/* Hero Container */
+.container {
+    width: 80%;
+    height: 100%;
+    margin: 30px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container div{
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    padding: 10px 15px;
+    border: none;
+    background: #27ae60;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    display: block;
+    /* margin: 0,auto; */
+    width: 200px;
+    margin: 10px;
+}
+
+button:hover {
+    background: #219150;
+}

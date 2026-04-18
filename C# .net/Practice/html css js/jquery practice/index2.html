@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form action="">? -->
+        <label for="name">name :</label>
+        <input type="text" name="name" id="name"><br>
+
+        <br>
+        <label for="phno">Phone no</label>
+        <input type="number" name="phno" id="phno"><br>
+
+        <select name="city" id="city">
+            <option value="mumbai">mumbai</option>
+            <option value="thane">thane</option>
+            <option value="Ambdabad">Ambdabad</option>
+            <option value="NaviMumbai">NaviMumbai</option>
+        </select>
+
+        <label for="gender">Gender : </label>
+        <input type="radio" name="gender" value="male" id="male"> male
+        <input type="radio" name="gender" id="female" id="female"> female
+
+        <br><br>
+
+        <label for="lang"> languages Known :</label>
+        <input type="checkbox" name="lang" id="html" value="html">html
+        <input type="checkbox" name="lang" id="css" value="css">css
+        <input type="checkbox" name="lang" id="js" value="js">js
+
+        <button class="btn"> this is a button </button>
+        <button type="submit" class="sub-btn"> Submit </button>
+    <!-- </form> -->
+
+    <div class="display">
+        <p> name : <span class="dispName"></span></p>
+        <p>Phone no : <span class="dispPhno"></span></p>
+        <p>City : <span class="dispCity"></span></p>
+        <p>Gender : <span class="dispGender"></span></p>
+        <p> languages : <span class="dispLanguages"></span></p>
+    </div>
+
+    <script src="jquery-4.0.0.js"></script>
+    <script src="index2Jquery.js"></script>
+</body>
+</html>

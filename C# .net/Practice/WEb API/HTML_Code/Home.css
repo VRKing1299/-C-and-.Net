@@ -1,0 +1,477 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f5f5f5; /* Background color */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px -1px;
+    background-color: #fff;
+    border: 2.5px solid black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+header h1{
+    text-shadow: 1px 5px pink;
+    font-style: italic;
+    /* padding-right: 87px; */
+}
+.logo img {
+    height: 90px;
+    width: 100px;
+}
+
+nav ul {
+display: flex;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+nav ul li {
+margin: 0 10px
+}
+
+nav ul li a,
+nav ul li button {
+text-decoration: none;
+color: #333;
+font-weight: bold;
+font-size: 15px;
+display: flex;
+align-items: center;
+height: 50px;
+background: none; /* Ensures no background for button */
+border: none; /* Removes default button border */
+cursor: pointer; /* Changes cursor to pointer */
+padding: 0 10px; /* Adds horizontal padding */
+}
+
+nav ul li a:hover,
+nav ul li button:hover {
+color: #d50000; /* Changes text color on hover */
+background: none;
+}
+
+nav ul li button {
+background: none; /* Ensures button background is none */
+border: none; /* Ensures button border is none */
+padding: 0; /* Removes default padding */
+margin: 0; /* Removes default margin */
+}
+
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 5px 15px;
+    width: 350px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 16px;
+    flex: 1;
+    height: 100%;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.search-bar i {
+    color: #888;
+    font-size: 18px;
+}
+
+.user-actions {
+display: flex;
+align-items: center;
+gap: 15px; /* Adjust gap between icons for better spacing */
+}
+
+.user-actions a {
+text-decoration: none;
+color: #333;
+display: flex;
+align-items: center;
+font-size: 16px;
+height: 50px;
+padding: 0 10px;
+border-radius: 10px; /* Rounded corners for a softer look */
+transition: background-color 0.3s, color 0.3s, border 0.3s; /* Smooth transitions */
+}
+
+.user-actions a:hover {
+background-color: #f0f0f0; /* Light background on hover */
+color: #d50000; /* Change text color on hover */
+}
+
+.user-actions i {
+margin-right: 8px;
+font-size: 18px;
+}
+
+/* Profile dropdown styles */
+.profile {
+position: relative;
+}
+
+.profile-options {
+display: none;
+position: absolute;
+top: 50px;
+right: 0; /* Align to the right of the profile link */
+background-color: #fff;
+border: 1px solid #ddd; /* Border for profile options */
+border-radius: 8px; /* Rounded corners */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+overflow: hidden;
+z-index: 1000;
+white-space: nowrap;
+transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transitions for visibility */
+}
+
+.profile-options a {
+display: block;
+padding: 4px 20px;
+text-decoration: none;
+color: #333;
+font-size: 17px;
+border-bottom: 1px solid #ddd;
+transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.profile-options a:last-child {
+border-bottom: none;
+}
+
+.profile-options a:hover {
+background-color: #f7f7f7; /* Light background on hover */
+}
+
+/* Show profile options on hover */
+.profile:hover .profile-options {
+display: block;
+opacity: 1; /* Ensure visibility */
+transform: translateY(0); /* Reset transform */
+}
+.product-options {
+display: none;
+position: absolute;
+top: 59px;
+right: 818px; /* Align to the right of the product link */
+background-color: #fff;
+border: 1px solid #ddd; /* Border for profile options */
+border-radius: 8px; /* Rounded corners */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+overflow: hidden;
+z-index: 1000;
+white-space: nowrap;
+transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transitions for visibility */
+}
+
+.product-options a {
+display: block;
+padding: 4px 20px;
+text-decoration: none;
+color: #333;
+font-size: 17px;
+border-bottom: 1px solid #ddd;
+transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.product-options a:last-child {
+border-bottom: none;
+}
+
+.product-options a:hover {
+background-color: #f7f7f7; /* Light background on hover */
+}
+
+/* Show profile options on hover */
+#product:hover .product-options {
+display: block;
+opacity: 1; /* Ensure visibility */
+transform: translateY(0); /* Reset transform */
+}
+
+.container {
+    display: flex;           
+    padding-top: 40px;
+    padding-right: 0px;
+    gap: 10px;
+    flex-direction: row;
+    width: 100%;
+}
+
+.sidebar {
+    position: sticky;
+    top: 70px; /* Offset for the fixed header */
+    width: 250px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: calc(100vh - 70px); /* Adjust height to fill viewport minus header */
+    overflow-y: auto;
+}
+
+.sidebar h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 28px 12px;
+    line-height: 28px;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 17px;
+}
+
+.sidebar input[type="range"] {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.sidebar label {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.sidebar input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+.sidebar button {
+    background-color: #d50000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.sidebar button:hover {
+    background-color: #b20000;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative; /* Ensures the background stays fixed */
+}
+
+main {
+    padding-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* section {
+    margin-bottom: 40px;
+} */
+#home {
+text-align: center;
+background-color: #f5f5f5;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+height: 100vh; /* Full viewport height */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+#home .home-content {
+/* max-width: 800px; */
+margin: 0 auto;
+}
+
+#home h2 {
+font-size: 36px;
+color: #333;
+margin-bottom: 20px;
+margin-top: 10px;
+}
+
+#home p {
+font-size: 20px;
+color: #560;
+margin-top: 20px;
+line-height: 1.6;
+}
+
+#home button {
+background-color: #eeafaf;
+color: #fff;
+border: none;
+border-radius: 5px;
+padding: 15px 30px;
+margin: 20px 0px;
+font-size: 18px;
+cursor: pointer;
+transition: background-color 0.3s, transform 0.2s;
+}
+
+#home button:hover {
+background-color: #a86767;
+transform: scale(1.05);
+}
+
+
+#products h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#filter {
+    margin-bottom: 20px;
+}
+
+#filter button {
+    background-color: #d50000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+#filter button:hover {
+    background-color: #b20000;
+}
+
+#cardHello {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+/* slide imag */
+/* Container for both carousels */
+.main-container {
+display: flex;
+justify-content: space-between; /* Space between the two carousels */
+align-items: center;
+height: 60vh;
+width: 100%;
+gap: 20px;
+overflow: hidden;
+}
+
+/* Each carousel container */
+.carousel {
+width: 48%; /* Adjusted to take up half the width of the parent */
+height: 100%;
+position: relative;
+}
+
+.carousel img {
+width: 100%;
+height: 100%;
+object-fit: cover; /* Ensures images cover the slide area */
+}
+
+.carousel-slide {
+display: none;
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+border: 2px solid #d59bd3;
+animation: slideLeft 1s ease-in-out; /* Sliding effect */
+}
+.carousel-slide a {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-size: 27px;
+    font-weight: bold;
+    background: transparent;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    width: 152px;
+}
+.carousel-slide a:hover {
+    background: rgba(0, 0, 0, 0.7);
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
+}
+
+@keyframes slideLeft {
+from {
+transform: translateX(100%);
+}
+to {
+transform: translateX(0);
+}
+}
+

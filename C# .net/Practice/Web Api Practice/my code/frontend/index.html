@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 95vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        select{
+            height: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 150px;
+        }
+        form{
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            height: 50vh;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: lightblue;
+            border-radius: 20px;
+            box-shadow: 5px 10px 25px rgba(0,0,0,0.08);
+            padding: 10px;
+            margin:10px;
+        }
+
+        form input{
+            height: 25px;
+            width: 200px;
+            margin: 3px;
+            border-radius: 5px;
+            border: 2px solid royalblue;
+            text-align: center;
+        }
+
+        /* form input:focus{
+            border: 2px solid lightyellow;
+        } */
+
+        form button{
+            padding:8px 15px;
+            margin:5px 3px;
+            border:none;
+            background:#007bff;
+            color:white;
+            border-radius:5px;
+            cursor:pointer;
+            transition: all 0.3s;
+            width: 100px;
+        }
+
+        form button:disabled{
+            background:#0052a8;
+        }
+
+        form button:hover{
+            transform: scale(1.03) translateY(-2px);
+        }
+
+        form div{
+            width: 50%;
+            /* background-color: red; */
+            margin: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <select name="dllid" id="dllid">
+    </select>
+    <form action="">
+        <input type="text" name="name" id="name" placeholder="name" required>
+        <input type="text" name="sal" id="sal" placeholder="sal" required>
+        <input type="number" name="deptId" id="deptId" placeholder="DeptId" required>
+        <input type="text" name="deptName" id="deptName" placeholder="deptName" disabled>
+
+        <br>
+
+        <div>
+            <button id="add">Add</button>
+            <button id="save">save</button>
+        </div>
+
+        <div>
+            <button id="edit">edit</button>
+            <button id="update" disabled>update</button>
+        </div>
+        <div>
+            <button id="delete">delete</button>
+        </div>
+    </form>
+    <script src="jquery-4.0.0.js"></script>
+    <script>
+        const apiUrl = "http://localhost:52035/api/Employee";
+
+        // fill the form with current employee value
+        function FillForm(emp){
+            $("#name").val(emp.EmpName);
+            $("#deptName").val(emp.DeptName);
+            $("#sal").val(emp.Salary);
+            $("#deptId").val(emp.DeptId);
+        }
+
+        // clears all the value in the form
+        function ClearForm(){
+            $("#name").val("");
+            $("#deptName").val("");
+            $("#sal").val("");
+            $("#deptId").val("");
+        }
+
+        // enable and disable the form
+        function EnableForm(b){
+            $("#name").prop("disabled",b);
+            // $("#deptName").prop("disabled",true);
+            $("#sal").prop("disabled",b);
+            $("#deptId").prop("disabled",b);
+        }
+
+        // function to get the form data
+        function GetFormDataWithId(){
+            return {
+                EmpId:$("#dllid").val(),
+                EmpName:$("#name").val(),
+                Salary:$("#sal").val(),
+                DeptId:$("#deptId").val()
+            }
+        }
+
+        function GetFormData(){
+            return {
+                EmpName:$("#name").val(),
+                Salary:$("#sal").val(),
+                DeptId:$("#deptId").val()
+            }
+        }
+
+        //checks if value is null or white space
+        function isNullOrWhiteSpace(value){
+            return value==null || value.trim()==="";
+        }
+
+        //validation for the null value
+        function validateForm(){
+            if (isNullOrWhiteSpace($("#name").val())) {
+                alert("Name is required");
+                return false;
+            }
+
+            if (isNullOrWhiteSpace($("#sal").val())) {
+                alert("Salary is required");
+                return false;
+            }
+
+            if (isNullOrWhiteSpace($("#deptId").val())) {
+                alert("DeptId is required");
+                return false;
+            }
+
+            return true;
+        }
+        // checks if document is ready or not before loading the loadDropDown
+        $(document).ready(() => {
+            loadDropDown();
+        });
+
+        // function that loads the drop down
+        function loadDropDown(){
+            $.ajax({
+                url:apiUrl,
+                type: "GET",
+                success:(data)=>{
+                    let options = "";
+                    options+=`<option value="selectId">-- Select Id--</option>`
+                    data.forEach(emp=>{
+                        options +=`<option value="${emp.EmpId}">${emp.EmpId}</option>`
+                    })
+
+                    $("#dllid").html(options);
+
+                },
+                error: () => {
+                    alert("Error loading data");
+                }
+            })
+        }
+
+        //function that listens the event of change on drop down
+        $("#dllid").on("change",()=>{
+            let id = $("#dllid").val();
+            if("selectId"==id){
+                ClearForm();
+                EnableForm(false);
+                return;
+                $("#save").prop("disabled",false);
+                $("#update").prop("disabled",true);
+            }
+            $.ajax({
+                url:apiUrl,
+                type:"GET",
+                success:(data)=>{
+                    let emp = data.find(emp=>emp.EmpId==id);
+                    if(emp){
+                        FillForm(emp);
+                        EnableForm(true);
+                    }
+                    $("#save").prop("disabled",true);
+                    $("#update").prop("disabled",true);
+                }
+            })
+        })
+
+        // add button that clears the form and loads the default id selector for the form
+        $("#add").on("click",(e)=>{
+            e.preventDefault();
+            ClearForm();
+            EnableForm(false);
+            $("#save").prop("disabled",false);
+            $("#update").prop("disabled",true);
+            $("#dllid").val("selectId")
+        })
+
+        //! function to save the employee/ add new employee data
+        $("#save").on("click",(e)=>{
+            e.preventDefault();
+            //validating the input
+            if(!validateForm()){
+                // alert("please fill all the data");
+                return;
+            }
+            let emp = GetFormData();
+            $.ajax({
+                url:apiUrl,
+                type:"POST",
+                contentType:"application/json",
+                data:JSON.stringify(emp),
+
+                success:()=>{
+                    alert("employee has been added");
+                    ClearForm();
+                    loadDropDown();
+                    $("#save").prop("disabled",true);
+                },
+
+                error: () => {
+                    alert("Error saving employee");
+                }
+            })
+        })
+        
+        // fuction to unable the editing of current employee
+        $("#edit").on("click",(e)=>{
+            if($("#dllid").val()==="selectId"){
+                alert("please select an id before editing");
+                return;
+            }
+            e.preventDefault();
+            EnableForm(false);
+            $("#save").prop("disabled",true);
+            $("#update").prop("disabled",false);
+        })
+
+
+        // //function to update the employee data
+        // $("#update").on("click",(e)=>{
+        //     e.preventDefault();
+
+        //     //validating the input
+        //     if(!validateForm()){
+        //         // alert("please fill all the data");
+        //         return;
+        //     }
+            
+        //     let emp = GetFormDataWithId();
+
+        //     $.ajax({
+        //         url:apiUrl,
+        //         type:"PUT",
+        //         contentType:"application/json",
+        //         data:JSON.stringify(emp),
+
+        //         success:()=>{
+        //             alert("employee data updated successfully");
+        //             $("#update").prop("disabled",true);
+        //             EnableForm(true)
+        //         },
+
+        //         error:()=>{
+        //             alert("error while updating employee data ");
+        //         }
+        //     })
+        // })
+
+        //function to update the employee data
+        $("#update").on("click",(e)=>{
+            e.preventDefault();
+
+            //validating the input
+            if(!validateForm()){
+                // alert("please fill all the data");
+                return;
+            }
+
+            let id = $("#dllid").val();
+            let emp = GetFormData();
+
+            $.ajax({
+                url:`${apiUrl}?id=${id}`,
+                type:"PUT",
+                contentType:"application/json",
+                data:JSON.stringify(emp),
+
+                success:()=>{
+                    alert("employee data updated successfully");
+                    $("#update").prop("disabled",true);
+                    EnableForm(true)
+                },
+
+                error:()=>{
+                    alert("error while updating employee data ");
+                }
+            })
+        })
+    
+    
+        //function to delete the employee data using id
+        $("#delete").on("click",(e)=>{
+            e.preventDefault();
+
+            if($("#dllid").val()==="selectId"){
+                alert("please select an id before deleting");
+                return;
+            }
+
+            let id=$("#dllid").val();
+            if(!confirm(`are you sure you want to delete employee with id ${id} ?`)) return;
+
+            $.ajax({
+                url:`${apiUrl}?id=${id}`,
+                type:"DELETE",
+
+                success:()=>{
+                    alert("employee deleted successfully");
+                    ClearForm();
+                    loadDropDown();
+                },
+
+                error:()=>{
+                    alert("failed to delete employee");
+                }
+            })
+        })
+    </script>
+</body>
+</html>

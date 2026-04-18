@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToyLand</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+header {
+    background-color: #ff6b6b;
+    padding: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    background-color: #ffe66d;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 40px;
+}
+
+.hero-content button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    border: none;
+    color: white;
+}
+
+/* FEATURED */
+.featured {
+    padding: 30px;
+    text-align: center;
+}
+
+.toy-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.toy-card {
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 15px;
+    width: 200px;
+}
+
+.toy-card img {
+    width: 100%;
+}
+
+/* CATEGORIES */
+.categories {
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+}
+
+.category-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.category {
+    background-color: #4ecdc4;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav>
+            <h1 id="logo">ToyLand</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Toys</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Fun Starts Here 🎈</h2>
+            <p>Discover amazing toys for kids of all ages</p>
+            <button>Shop Now</button>
+        </div>
+    </section>
+
+    <!-- FEATURED TOYS -->
+    <section class="featured">
+        <h2>Featured Toys</h2>
+
+        <div class="toy-container">
+            <div class="toy-card">
+                <img src="https://via.placeholder.com/200">
+                <h3>RC Car</h3>
+                <p>₹999</p>
+            </div>
+
+            <div class="toy-card">
+                <img src="https://via.placeholder.com/200">
+                <h3>Teddy Bear</h3>
+                <p>₹499</p>
+            </div>
+
+            <div class="toy-card">
+                <img src="https://via.placeholder.com/200">
+                <h3>Building Blocks</h3>
+                <p>₹799</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="categories">
+        <h2>Shop by Category</h2>
+
+        <div class="category-container">
+            <div class="category">Cars</div>
+            <div class="category">Dolls</div>
+            <div class="category">Educational</div>
+            <div class="category">Outdoor</div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 ToyLand | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

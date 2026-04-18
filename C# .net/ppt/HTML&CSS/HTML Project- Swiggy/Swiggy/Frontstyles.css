@@ -1,0 +1,234 @@
+.imge img{
+    display: inline-block; 
+    margin: 5px 5px 0px 5px; 
+    object-fit: cover; 
+    width: 150px; 
+    height: 150px; 
+    border: 2px solid #000000; 
+    border-radius: 5px; 
+}
+.imge:hover {
+  transform: scale(1.1); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  border-radius: 5px;
+ }
+ .strghtrow{
+    display: flex; 
+    justify-content: flex-start; 
+    gap: 15px; 
+    margin-left: 90px;
+    margin-right: 20px;
+}
+.imgname{
+    font-weight: bold;
+    text-align: center;
+    color: aliceblue;
+}
+/* Logo CSS Code... */
+#logo{
+    font-size: 80px;
+}
+/* List CSS Code... */
+.head li{
+    list-style-type: none;
+    display: inline;
+    margin-left: 5%;
+    border: solid;
+    padding: 6px 6px 6px 6px;
+}
+#login li{
+  background-color: black;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 15px; 
+  border-radius: 25px;
+}
+.head{
+    margin-left: 2%;
+    margin-top: -2%;
+}
+#login{
+    margin-left: 30%;
+    margin-top: -1.3%;
+}
+#ctreword{
+    margin-left: 25%;
+    font-size: 300%;
+    color: rgb(255, 255, 255);
+}
+
+.bugimg img{
+    display: inline-block;
+    margin: 5px 5px 0px 5px;
+    object-fit: cover; 
+    width: 280px; 
+    height: 280px;
+    border: 2px solid #f7f3f3; 
+    border-radius: 5px; 
+}
+
+/*-----------footer--------------------------------------------*/
+
+footer {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.columnn {
+  flex: 1;
+  padding:  3%;
+}
+
+.columnn h3 {
+  margin-bottom: 10px;
+}
+
+.columnn ul {
+  list-style: none;
+  padding: 0;
+}
+
+.columnn ul li {
+  margin-bottom: 5px;
+}
+
+.social-links {
+  display: flex;
+}
+
+.social-links a {
+  margin-right: 10px;
+  margin-left: 5px;
+  padding-left: 10%;
+}
+/* -------------Navigation----------------------- */
+nav {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  transition: top 0.5s;
+  color: rgb(0, 0, 0);
+  z-index: 10001;
+  background-color: white;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  padding: 30px;
+  position: relative; 
+}
+
+body {
+  font-family: "Roboto Condensed", 'Trebuchet MS';
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #08090b;
+}
+
+nav a {
+  font-size: 16px;
+  padding: 15px 20px;
+  border: none;
+  color: inherit;
+  background-color: white;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+}
+
+
+nav a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: rgb(0, 0, 0);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+nav a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+/* =======DropDown================================================================================= */
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  min-width: 150px;
+  padding: 0;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.dropdown-menu li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.dropdown-menu li a {
+  color: black;
+  display: block;
+  width: 100%;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+  /* ====== Login CSS============================================================================== */
+   /* Overlay background for login */
+   .overlaybg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    display: none; 
+    z-index: 999; 
+}
+
+/* Login overlay */
+.loginoverlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%; 
+    height: 100%; 
+    background: white; 
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3); 
+    transform: translateX(100%); 
+    transition: transform 0.3s ease; 
+    z-index: 1000; 
+}
+
+/* Show the login overlay */
+.loginoverlay.active {
+    transform: translateX(0); 
+}

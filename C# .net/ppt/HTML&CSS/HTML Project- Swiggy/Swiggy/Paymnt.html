@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 5%;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            outline: none;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .info-text {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        /* Payment Specific Styles (adjust as needed) */
+        .payment-container {
+            display: flex; /* Use flexbox for layout */
+        }
+        .payment-form {
+            width: 50%; /* Occupy half the width */
+            padding-right: 2%;
+        }
+        .payment-info {
+            width: 50%; /* Occupy half the width */
+            padding-top: 15.1%; 
+            padding-bottom: 15.1%; 
+            padding-right:1%;
+            padding-left: 1%; 
+            background-color: #ff9900;
+            color: white; /* Text color for the info section */
+            text-align: center; /* Center the text */
+        }
+        .card-info label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .card-info input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            box-sizing: border-box; /* Include padding in width */
+        }
+         .pay-button{
+            width: 100%;
+         }
+        
+
+        .payment-form {
+            width: 50%;
+            padding-left: 2%; /* Added left padding instead of right */
+        }
+
+        .payment-container {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        .payment-info {
+            width: 50%; /* Or adjust as needed */
+            padding: 5%; /* Adjust padding as needed */
+            background-color: #ff9900;
+            color: white;
+            text-align: center;
+            border-radius: 25px; /* Rounded corners */
+            display: flex; /* Center content vertically */
+            flex-direction: column; /* Stack content vertically */
+            justify-content: center; /* Center content vertically */
+            align-items: center; /* Center content horizontally */
+        }
+        .payment-info h1{
+             color: white;
+        }
+        .payment-info i{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="payment-container">
+        <div class="payment-form container">
+            <h1>Payment</h1>
+            <div class="card-info">
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" placeholder="Enter card number" maxlength="19" oninput="formatCardNumber(this)">
+
+                <label for="expiry">Expiry (MM/YY):</label>
+                <input type="text" id="expiry" placeholder="MM/YY" maxlength="5" oninput="formatExpiry(this)">
+
+                <label for="cvv">CVV:</label>
+                <input type="password" id="cvv" placeholder="CVV" maxlength="3">
+            </div>
+
+            <button class="pay-button" onclick="validateAndPay()">Pay Now</button>
+        </div>
+        <div class="payment-info">
+            <h1>Payment Form!!</h1>
+            <h1>Glad To See You! <i class="fa-regular fa-face-smile-wink"></i></h1>
+        </div>
+    </div>
+
+    <script>
+        // ... (formatCardNumber and formatExpiry functions from previous response) ...
+
+        function validateAndPay() {
+            const cardNumber = document.getElementById('card-number').value.replace(/\s/g, '');
+            const cvv = document.getElementById('cvv').value;
+            const expiry = document.getElementById('expiry').value;
+
+            let isValid = true;
+            let errorMessage = "";
+
+            if (cardNumber.length !== 16 || isNaN(cardNumber)) {
+                errorMessage += "Invalid card number.\n";
+                isValid = false;
+            }
+
+            if (cvv.length !== 3 || isNaN(cvv)) {
+                errorMessage += "Invalid CVV.\n";
+                isValid = false;
+            }
+
+            if (!/^\d{2}\/\d{2}$/.test(expiry)) {
+                errorMessage += "Invalid expiry format (MM/YY).\n";
+                isValid = false;
+            }
+
+            if (!isValid) {
+                alert(errorMessage);
+            } else {
+                payNow();
+            }
+        }
+
+        function payNow() {
+            // ... (payment processing logic from previous response) ...
+        }
+    </script>
+
+</body>
+</html>

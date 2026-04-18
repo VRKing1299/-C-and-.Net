@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to cart</title>
+    <link rel="icon" href="./Images/CosmeticsIcon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./Home.css">
+    <link rel="stylesheet" href="./AllCart.css">
+    <link rel="stylesheet" href="./Footer.css">
+    <link rel="stylesheet" href="./cart.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            
+            <img src="./Images/CosmeticsLogo.jpg" alt="Logo">
+        </div>
+        <h1><a class="Cosmetic Store" title="Cosmetic Store">Cosmetic Store</a></h1>
+        <nav>
+            <ul>              
+                
+                <li><a href="./index.html">Home</a></li>
+                <li id="product"><a href="#products">Products</a>
+                    <div class="product-options">
+                        <a href="./Lipstic.html">Lipstics</a>
+                        <a href="./Foundation.html">Foundation</a>
+                        <a href="./Eyeliner.html">Eyeliner</a>
+                       
+                    </div>
+                </li>
+                <li><a href="#footer">About us</a></li>
+                <li><a href="#slideCosmetics">Best Collection</a></li>
+                    
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for Bags....."/>
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="user-actions">
+            <div class="profile">
+                <a href="#" class="profile-link"><i class="far fa-user"></i> Profile</a>
+                <div class="profile-options">
+                    <a href="./Login.html">Sign In</a>
+                    <a href="./Registration.html">Sign Up</a>
+                </div>
+            </div>
+            <a href="./AllCart.html"><i class="fas fa-shopping-bag"></i> </a>
+        </div>
+    </header>
+
+    <div class="head">
+        <a class="head-prod" href="#products">Shopping Cart</a>
+    </div>
+    
+    <div id="label" class="text-center">
+    
+    </div>
+    <div class="shopping-cart" id="shopping-cart">
+        
+    </div>
+    <div id="cart-main">
+        <h1>Your Cart</h1>
+        <div id="cart-container">
+            <div class="cart-item2">
+                <!-- Cart item details -->
+                <div class="item-details">
+                    <span class="item-quantity">1</span>
+                    <!-- Other details -->
+                </div>
+                <div class="item-total">
+                    <span class="item-total-price">$00</span>
+                </div>
+            </div>
+            <!-- More cart items -->
+        </div>
+        <div id="total-container" style="display: none;">
+            <h3>Total: $<span id="total-price">0</span></h3>
+        </div>
+        
+        <button id="Buy" class="btnPaynow"><a href="#">Pay now</a></button>
+    </div>
+ 
+
+
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-sections">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>At Cosmetic Store, we pride ourselves on offering a curated selection of Cosmetics Products that combine style, fashion, and durability. Our products are made to elevate your look and suit your skin.</p>
+                    <a href="#">Learn More</a>
+                </div>
+    
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Shipping Information</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <p id="footerLast">&copy; 2024 Cosmetic Store. All rights reserved.</p>
+                    </ul>
+                </div>
+    
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p" ></i></a>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </footer>
+    
+    
+    <script src="./slideimage.js"></script>
+    <script src="./AllCart.js"></script>
+</body>
+</html>

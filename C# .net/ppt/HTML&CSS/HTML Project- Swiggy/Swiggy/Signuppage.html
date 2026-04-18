@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up Form</title>
+  <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous">
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 5%;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px; 
+    outline: none;
+    }
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px; /* Rounded button */
+  cursor: pointer;
+}
+
+    .info-text {
+      margin-top: 20px;
+      text-align: center;
+    }
+  </style>
+  <script src="Signuppage.js" defer></script>
+</head>
+<body>
+     
+  <div class="container">
+    <h1>Hello, Dude!..</h1>
+    <form id="signupForm">
+      <div class="form-group">
+        <label for="name">Name :</label>
+        <input type="text" id="name" name="txtname" placeholder="Name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="txtemail" placeholder="E-mail">
+      </div>
+      <div class="form-group">
+        <label for="password">Password :</label>
+        <input type="password" id="password" name="txtpassword" placeholder="Password">
+      </div>
+      <div class="form-group">
+        <label for="terms">I agree to the Terms & Conditions</a></label>
+      </div>
+      <button id="btn" type="submit">Create Account</button>
+    </form>
+    <div class="info-text">
+      Already have an account? <a href="Loginpage.html">Sign In</a>
+    </div>
+  </div>
+  <div class="container" style=" padding-top: 15.1%; padding-bottom: 15.1%; padding-right:1%;padding-left: 1%; background-color: #ff9900;">
+    <h1 style="color: white;">Sign Up Form!!</h1>
+    <h1 style="color: white;">Glad To See You! <i style="color: yellow;" class="fa-regular fa-face-smile-wink"></i></h1>
+  </div>
+
+</body>
+</html>

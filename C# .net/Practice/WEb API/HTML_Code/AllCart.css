@@ -1,0 +1,271 @@
+body {
+    font-family: Arial, sans-serif;
+    /* margin: 0% 15%; */
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+#cart-main h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#cart-main {
+    margin-top: 138px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto; /* Center the cart container */
+}
+
+#cart-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 140%;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 3px 4px 6px rgba(0, 0, 0, 1.1);
+}
+
+.cart-item img {
+    max-width: 100px;
+    margin-right: 20px;
+}
+
+.item-details {
+    flex-grow: 1;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity-controls button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.item-total {
+    text-align: right;
+    min-width: 100px;
+}
+
+#total-container {
+    text-align: right;
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#total-container h3 {
+    width: 100%;
+}
+
+.btnPaynow {
+    padding: 10px;
+    background-color: pink;
+    box-shadow: 2px -1px 4px;
+    border-radius: 5px;
+    display: block; /* Block level element to take full width */
+    margin: 20px 0 0 auto; /* Add margin to position it below the total and align right */
+    width: 150px; /* Set a fixed width */
+    text-align: center; /* Center the text inside the button */
+    margin-bottom: 20px;
+}
+
+.btnPaynow a {
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    display: block; /* Makes the entire button clickable */
+}
+
+/* Payment Form Styling */
+#payment-form {
+    margin-top: 20px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Set a max width for the form */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#payment-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+#payment-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#payment-form input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Styling for CVV input field */
+#payment-form input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    height: 40px; /* Increase the height */
+}
+
+#payment-form button {
+    width: 100%;
+    padding: 12px 0;
+    background-color: #ff69b4; /* Pink color for the button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#payment-form button:hover {
+    background-color: #ff1493; /* Darker pink on hover */
+}
+
+/* Payment Type Options */
+.payment-type-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.payment-type-container input[type="radio"] {
+    accent-color: #ff69b4; /* Customize the radio button color */
+    margin-right: 5px; /* Space between radio button and label */
+}
+
+.payment-type-container label {
+    margin: 0 10px; /* Space around each label */
+    font-size: 16px;
+    color: #333;
+    display: inline-flex; /* Align labels in a row */
+    align-items: center; /* Vertically center the text with radio button */
+}
+
+.payment-type-container input[type="radio"] + label {
+    margin-left: 0; /* No extra margin between radio button and label */
+}
+
+
+/* Styling for "Your cart is empty" message */
+.empty-cart-message {
+    font-size: 1.5em;
+    color: #ff6347; /* Tomato color for emphasis */
+    text-align: center;
+    margin-top: 50px;
+    background-color: #fff3f3; /* Light red background */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for "Thank you" message after successful payment */
+#thank-you-message {
+    font-size: 2em;
+    color: #28a745; /* Green color for success */
+    text-align: center;
+    margin-top: 50px;
+    background-color: #e6ffe6; /* Light green background */
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* payment form css  */
+.cart-item2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+   box-shadow: 2px 2px 2px black;
+    margin-bottom: 10px;
+   
+}
+
+.cart-item2 img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.item-details {
+    flex: 1;
+}
+
+.item-details h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.item-details p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.item-details h4 {
+    margin: 5px 0;
+    color: #333;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-controls button {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.quantity-controls .btn-remove {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    margin-left: 10px;
+}
+
+.item-total {
+    text-align: right;
+}
+
+.item-total h4 {
+    margin: 5px 0;
+    color: #333;
+}
+

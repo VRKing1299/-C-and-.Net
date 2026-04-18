@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page|| Cosmetic Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        
+        margin: 0;
+        padding: 0;
+background-color: rgb(224, 234, 243);
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Dosis", "Barlow Condensed", sans-serif;
+    }
+
+    .navbar {
+        font-size: 1.7rem;
+        display: flex;
+        justify-content: center;
+        text-shadow: 2px 2px 2px gray;
+       font-weight: bold;
+        box-shadow: 2px 5px 6px rgba(110, 110, 110, .3);
+        color: rgb(60, 82, 100);
+    }
+    .button-36 {
+        background-color: #3498db;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 8px;
+    }
+    .button-36 a{
+        text-decoration: none;
+        color: white;
+    } 
+    .center {
+        position: sticky;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    .container {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 500px;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+h2 .fa-user-tie{
+    color: rgb(0, 119, 255);
+
+}
+    input[type="text"],
+    input[type="number"],
+    input[type="file"],
+    textarea,
+    .category,
+    .add-button {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .category {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .category label {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .category input[type="radio"] {
+        margin-right: 5px;
+    }
+
+    .add-button {
+        background-color: #00b0ad;
+        color: white;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .add-button:hover {
+        background: #007d7a;
+    }
+
+    .error {
+        color: red;
+        display: none;
+    }
+
+    .login-div {
+        position: absolute;
+        right: .5rem;
+       
+        padding: 10px;
+      
+        box-shadow: 2px 5px 6px rgba(110, 110, 110, .3);
+    }
+
+    .login-div-con {
+        color: black;
+        text-decoration: none;
+    }
+
+    .login-icon {
+        position: absolute;
+        right: 1.5rem;
+        align-self: center;
+        vertical-align: middle;
+        top: 8px;
+        color: black;
+    }
+
+    .login-icon:hover {
+        color: #00b0ad;
+    }
+
+    @media (max-width: 600px) {
+        .container {
+            padding: 15px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="file"],
+        textarea,
+        .category,
+        .add-button {
+            padding: 8px;
+        }
+    }
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    .table th {
+        background-color: #3498db;
+        color: #fff;
+        text-align: left;
+    }
+
+    .table td, .table th {
+        padding: 8px;
+        border: 1px solid #ddd;
+    }
+#imglogo{
+  height: 40px;
+}
+
+    
+</style>
+<body>
+    <header>
+        <div class="center">
+            <button type="button" class="button-36" id="btnUser"><a href="#User">Get All Users</a></button>
+            <button type="button" class="button-36" id="btnOrder">See All Orders</button>
+            <button type="button" class="button-36" id="btnCat">Get Products</button>
+            <button type="button" class="button-36" id="btnEdit"><a href="#Add">Add Products</a></button>
+            <button type="button" class="button-36"><a href="index.html" style="text-decoration: none; color: white;">Back To Home</a></button>
+          </div>
+          <br>
+          <br>
+        </header>
+
+    <div>
+            <nav class="navbar"><img id="imglogo"  src="./Images/CosmeticsLogo.jpg" alt="">
+                Cosmetic Store
+                <div>
+                    <a href="" class="login-icon"><i class="fa-regular fa-user"></i></a>
+                </div>
+            </nav>
+    
+            <a href="Login.html" class="login-div-con">
+                <div class="login-div">
+                    <span>Login</span>
+                </div>
+            </a>
+    
+        </header>
+        <section class="products">
+            <div class="box-container">
+              <table class="table ProductTable"></table>
+            </div>
+          </section>
+          <section id="User" class="users">
+            <div class="box-container">
+              <table class="table UserTable"></table>
+            </div>
+          </section>
+    
+    
+        <div  id="Add" class="container" style="background-color: aliceblue;">
+            
+            <h2><i class="fa-solid fa-user-tie">   Add Product</i></h2>
+            <form id="productForm">
+                
+                <input type="text" id="prodName" placeholder="Product Name" required>
+                <input type="number" id="prodPrice" placeholder="Product Price" required>
+                <input type="text" id="prodImg" placeholder="Prod Image Name" required>
+                <input type="number" id="prodQty" placeholder="Product Quantity" required>
+                <textarea id="prodDescription" placeholder="Product Description" rows="4" required></textarea>
+                
+    
+                <div class="category">
+                    Category:
+                    <label>
+                        <input type="radio" name="category" value="1" required> Lipstic
+                    </label>
+                    <label>
+                        <input type="radio" name="category" value="2" required> Foundation
+                    </label>
+                    <label>
+                        <input type="radio" name="category" value="3" required> Eyeliner 
+                    </label>
+                </div>
+                <div class="error" id="errorMessage"></div>
+                <button type="button" class="add-button" onclick="addProduct()">Add Product</button>
+        
+            </form>
+        </div>
+    </div>
+        <script>
+            //using exception handling mechanism to handle exception
+         try {
+            $(document).ready(() =>
+             {
+            $("#btnCat").click(() => {
+                ProductBtn();
+            })
+            function ProductBtn() {
+                try {
+                    //Creating Product Table based on available records from db
+                    var tableRow = "<tr id='tableHeading'><th>Product Id</th><th>Product Name</th><th>Product Image</th><th>Product Details</th><th>Product Quantity</th><th>Produc Price</th><th>Category ID</th></tr>";
+                    $.ajax({
+                        async: false,
+                        type: "GET",
+                        url: "http://localhost:60939/api/Product",
+                        success: (response) => {
+                            alert("in btnCat")
+                            $("#tableHeading").remove();
+                            $(".data").remove();
+        
+                            //Appending table row to previously created div from html
+                            $(".ProductTable").append(tableRow);
+                            for (let i = 0; i < response.length; i++) {
+                                var prod = response[i];
+                                var str = `<tr class='data'><td>${prod.ProdID}</td><td>${prod.ProdName}</td><td><img id='ProdImg' src= ${prod.ProdImg} alt=${prod.ProdID}></td><td> ${prod.ProdDsc}</td><td>${prod.ProdQty}</td><td>${prod.ProdPrice} </td><td> ${prod.categoryId} </td></tr>`;
+                                $(".ProductTable").append(str);
+                            }
+                        }
+                    })
+                } catch (err) {
+                    console.log(err);
+                }
+            }
+        });
+    
+   
+        function validateForm(prodPrice, prodQty) {
+            //using exception handling mechanism to handle exception
+            try 
+            {
+                //validating fields are not less than 0
+                if (prodPrice <= 0 || prodQty <= 0) {
+                document.getElementById('errorMessage').textContent = "Price and Quantity must be greater than zero.";
+                document.getElementById('errorMessage').style.display = 'block';
+                return false;
+                }
+                document.getElementById('errorMessage').style.display = 'none';
+                return true;
+                
+            } catch (error) 
+            {
+                
+            }
+            
+        }
+        
+
+        function addProduct() {
+            //using exception handling mechanism to handle exception
+            try {
+               // declaring fileds to get dynamic input
+            const prodName = document.getElementById('prodName').value;
+           
+            const prodPrice = parseInt(document.getElementById('prodPrice').value);
+            const prodQty = parseInt(document.getElementById('prodQty').value);
+            const prodDescription = document.getElementById('prodDescription').value;
+            const prodImg= document.getElementById('prodImg').value;
+            const category = parseInt(document.querySelector('input[name="category"]:checked').value);
+            
+
+            if (!validateForm(prodPrice, prodQty)) {
+                return;
+            }
+           
+            // Ask for confirmation
+                    var isConfirmed = confirm("Do you really Want To insert the Record");
+                    let folderPath, extension;
+                    if (isConfirmed) 
+                    {
+                        
+                        //Selecting Image Path Based on Category ID of Category Table
+                        if (category === 1) 
+                        {
+                            folderPath = "Images/LipsticImages/";
+                            extension = ".jpg";
+                        } 
+                        else if (category === 2) {
+                            folderPath = "Images/FoundationImages/";
+                            extension = ".jpg";
+                        } 
+                        else if (category === 3) {
+                            folderPath = "Images/EyelinerImages/";
+                            extension = ".jpg";
+                        } 
+                        //Concatinating full Image Path
+                        const imgName = folderPath + prodImg + extension;
+
+                        $.ajax
+                        ({
+                            type: "POST",
+                            url: "http://localhost:60939/api/Product",
+                            data: {
+                               
+                                'ProdName': prodName,
+                                'ProdPrice': prodPrice,
+                                'ProdImg': imgName,
+                                'ProdQty': prodQty,
+                                'ProdDsc': prodDescription,
+                                'categoryId': category
+                            
+                                },
+                            success: (response) => 
+                            {
+                                console.log(response);
+                                
+                                if (response === "Added"){
+                                    alert('Product added successfully!');
+                                    document.getElementById('productForm').reset();
+                                }   
+                                else if (response === "Product Already Exists") {
+                                    alert('Product Already Exists. Please add a different Product.');
+                                }                
+                            },
+                            error: function(err) 
+                            {
+                            alert('Error adding product.');
+                            console.log(err);
+                            }
+                          
+                        });
+                    }
+            } catch (error) {
+                
+            }
+            
+                
+          
+        }
+        //get all user details
+        $(document).ready(() =>
+        {
+            $("#btnUser").click(() =>
+             {
+                $('#Add').hide();
+                UserBtn();
+            })
+            function UserBtn() {
+                try {
+                    //Creating Product Table based on available records from db
+                    var tableRow = "<tr id='tableHeading1'><th>User Id</th><th>User Name</th><th>User EmailAddress</th><th>User Password</th></tr>";
+                    $.ajax({
+                        async: false,
+                        type: "GET",
+                        url: "http://localhost:60939/api/UserDetail/GetAllUser",
+                        success: (response) => {
+                            alert("in btnUser")
+                            $("#tableHeading1").remove();
+                            $(".data1").remove();
+        
+                            //Appending table row to previously created div from html
+                            $(".UserTable").append(tableRow);
+                            for (let i = 0; i < response.length; i++) {
+                                var user = response[i];
+                                var str = `<tr class='data1'><td>${user.UserID}</td><td>${user.UserName}</td><td> ${user.UserEmail}></td><td> ${user.UserPassword}></td></tr>`;
+                                $(".UserTable").append(str);
+                            }
+                        }
+                    })
+                } catch (err) {
+                    console.log(err);
+                }
+            }
+          
+
+        });
+        $(document).ready(() =>
+        {
+            $("#btnEdit").click(() =>
+             {
+                $('User').hide();
+                $('#Add').show();
+                
+
+            });
+        });
+
+
+
+            
+         } catch (error) {
+            
+            
+         }
+        
+        </script>
+</body>
+</html>
