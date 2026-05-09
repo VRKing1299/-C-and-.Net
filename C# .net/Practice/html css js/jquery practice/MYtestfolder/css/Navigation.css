@@ -1,0 +1,74 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body */
+body{
+    padding: 25px 0;
+    margin-top: 57px;
+    margin-bottom: 62px;
+    height: 95vh;
+    padding: 20px 0 0;
+    background-image: url("../Assets/background.png") !important;
+}
+
+/* Navbar */
+header {
+    position: fixed;
+    width: 100%;
+    height: 57px;
+    top: 0;
+    background: #2c3e50;
+    padding: 15px 0;
+    z-index: 99;
+}
+
+nav {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav .LogOut a{
+    color: orangered;
+}
+
+nav .LogIn a{
+    color: lightgreen;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    background: #2c3e50;
+    color: white;
+    margin-top: 30px;
+    padding: 15px 0;
+}
+
+.footer-container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-size: 14px;
+}

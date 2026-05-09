@@ -1,55 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/Navigation.css">
-    <link rel="stylesheet" href="./css/Product.css">
-    <link rel="stylesheet" href="./css/cart.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <h2>Fresh Basket</h2>
-            <ul>
-                <li><a href="Index.html">Home</a></li>
-                <li><a href="Products.html">Products</a></li>
-                <li><a href="MYOrders.html">My Orders</a></li>
-                <li><a href="Cart.html">Cart</a></li>
-                <li class="LogIn"><a href="LogIn.html">LogIn</a></li>
-                <li class="LogOut"><a href="Index.html">LogOut</a></li>
-            </ul>
-        </nav>
-    </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/Navigation.css" />
+        <link rel="stylesheet" href="./css/Product.css" />
+        <link rel="stylesheet" href="./css/cart.css" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h2>Fresh Basket</h2>
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="Products.html">Products</a></li>
+                    <li><a href="MYOrders.html">My Orders</a></li>
+                    <li><a href="Cart.html">Cart</a></li>
+                    <li class="LogIn"><a href="LogIn.html">LogIn</a></li>
+                    <li class="LogOut"><a href="Index.html">LogOut</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
+        <main>
+            <section>
+                <h2>Your Cart 🛒</h2>
+            </section>
 
-        <section>
-            <h2>Your Cart 🛒</h2>
-        </section>
+            <section class="product-container cart-container"></section>
 
-        <section class="product-container cart-container">
+            <section class="total-container">
+                <h3 id="totalAmount">Total: ₹0</h3>
+                <button class="pay">Pay</button>
+            </section>
+        </main>
 
-        </section>
+        <footer>
+            <div class="footer-container">
+                <p>Made by VR</p>
+                <p>Thank you for Visiting</p>
+            </div>
+        </footer>
 
-        <section class="total-container">
-            <h3 id="totalAmount">Total: ₹0</h3>
-            <button class="pay">Pay</button>
-        </section>
-
-    </main>
-
-    <footer>
-        <div class="footer-container">
-            <p>Made by VR</p>
-            <p>Thank you for Visiting</p>
-        </div>
-    </footer>
-
-    <script src="./js/jquery-4.0.0.js"></script>
-    <script src="./js/common.js"></script>
-    <script src="./js/cart.js"></script>
-</body>
+        <script src="./js/jquery-4.0.0.js"></script>
+        <script src="./js/common.js"></script>
+        <script src="./js/cart.js"></script>
+    </body>
 </html>
-

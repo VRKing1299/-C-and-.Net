@@ -1,0 +1,30 @@
+/* Cart total section */
+#totalAmount {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.total-container button {
+    padding: 10px 15px;
+    border: none;
+    background: #e67e22;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100px;
+}
+
+.total-container button:hover {
+    background: #d35400;
+}
+
+.total-container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+    margin-bottom: 30px;
+    background: #f9f9f9;   /* soft light background */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}

@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Cart</title>
+
+        <script src="../jquery-4.0.0.js"></script>
+        <script type="module" src="../dist/CartPage.js"></script>
+
+        <style>
+            body {
+                font-family: "Segoe UI", sans-serif;
+                background: #f9f7ff;
+                margin: 0;
+            }
+
+            .header {
+                background: linear-gradient(135deg, #5a0ffa, #9d65fe);
+                color: white;
+                text-align: center;
+                padding: 30px;
+            }
+
+            .remove-btn {
+                background: red !important;
+                color: white;
+                border: none;
+                padding: 8px 12px;
+                cursor: pointer;
+                border-radius: 6px;
+            }
+
+            .empty {
+                text-align: center;
+                margin-top: 50px;
+                color: #777;
+            }
+
+            .checkout-container {
+                text-align: center;
+                margin: 30px 0;
+            }
+
+            #checkoutBtn {
+                background: linear-gradient(135deg, #5a0ffa, #9d65fe);
+                color: white;
+                border: none;
+                padding: 14px 30px;
+                font-size: 16px;
+                font-weight: bold;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+
+            #checkoutBtn:hover {
+                transform: scale(1.05);
+                box-shadow: 0 6px 15px rgba(90, 15, 250, 0.3);
+            }
+
+            /* ===== CART SUMMARY BOX ===== */
+            .cart-summary {
+                background: white;
+                width: 320px;
+                margin: 30px auto;
+                border-radius: 12px;
+                padding: 25px;
+                box-shadow: 0 4px 12px rgba(90, 15, 250, 0.1);
+                border: 1px solid #ece6ff;
+                text-align: center;
+            }
+
+            .total-row {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 18px;
+                font-weight: bold;
+                color: #333;
+                border-bottom: 2px dashed #ece6ff;
+                padding-bottom: 15px;
+                margin-bottom: 20px;
+            }
+
+            #checkoutBtn {
+                background: linear-gradient(135deg, #5a0ffa, #9d65fe);
+                color: white;
+                border: none;
+                padding: 12px 0px;
+                font-size: 16px;
+                font-weight: bold;
+                border-radius: 8px;
+                cursor: pointer;
+                width: 100%;
+                transition: 0.3s;
+            }
+
+            #checkoutBtn:hover {
+                background: linear-gradient(135deg, #9d65fe, #5a0ffa);
+                box-shadow: 0 6px 15px rgba(90, 15, 250, 0.3);
+            }
+        </style>
+
+        <link rel="stylesheet" href="../Css/CourseCard.css" />
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>My Cart</h1>
+        </div>
+
+        <div class="course-grid" id="cartItems"></div>
+            
+        </div>
+        <!-- Replace your total and checkout section with this -->
+
+        <div class="cart-summary">
+            <div class="total-row">
+                <span>Total Amount:</span>
+                <span id="cartTotal">₹0</span>
+            </div>
+            <button id="checkoutBtn">Proceed to Enroll →</button>
+        </div>
+
+        <script src="../jquery-4.0.0.js"></script>
+        <script type="module" src="../dist/Navigation.js"></script>
+        <script type="module" src="../dist/CartPage.js"></script>
+    </body>
+</html>

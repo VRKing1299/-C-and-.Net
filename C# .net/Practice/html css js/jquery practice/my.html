@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            div {
+                background-color: lightsalmon;
+                padding: 5px;
+                margin: 5px;
+            }
+            #div1,
+            .div2 {
+                background-color: lightblue;
+                padding: 10px;
+            }
+            p {
+                background-color: lightpink;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="div1">CONTENT</div>
+        <p id="s1">HELLO</p>
+
+        <div class="div2">
+            <p>1</p>
+            <p>2</p>
+        </div>
+        <div class="div2">
+            <p>1</p>
+            <p>2</p>
+        </div>
+
+        <script src="./jquery-4.0.0.js"></script>
+        <script>
+            // $("p").wrap("<div></div>");
+            // $("p").wrapAll("<div></div>");
+            // $("#div1").append("<p>New Para</p>");
+            // $("#div1").append($("#s1")); //<-THIS MOVES THE ELEMENT JUST LIKE APPEND TO
+            // $("#s1").appendTo("#div1");
+            // $("#div1").before("<p>Before Div</p>");
+            // $("#div1").after("<p>Before Div</p>");
+            // $("#s1").insertBefore("#div1");
+            // $("#s1").insertAfter("#div1");
+
+            // let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+            // console.log(arr.slice());
+
+            // console.log(arr.splice());
+            // console.log(arr);
+
+            // let s = new Set([undefined, null, NaN]);
+            // s.add(undefined);
+            // s.add(null);
+            // s.add(NaN);
+            // console.log(s);
+        </script>
+    </body>
+</html>

@@ -1,16 +1,16 @@
-function DisplayCartItems(data){
+function DisplayCartItems(data) {
     let html = "";
     let total = 0;
 
-    if(!data || data.length === 0){
+    if (!data || data.length === 0) {
         html = "<h3>Your cart is empty</h3>";
         $(".cart-container").html(html);
         $("#totalAmount").text("Total: ₹0");
         return;
     }
 
-    data.forEach(item => {
-        let totalPrice = item.Price*item.Quantity;
+    data.forEach((item) => {
+        let totalPrice = item.Price * item.Quantity;
         total += item.TotalPrice;
 
         html += `
@@ -30,25 +30,25 @@ function DisplayCartItems(data){
 
     $(".cart-container").html(html);
     $("#totalAmount").text("Total: ₹" + total);
-    localStorage.setItem("total",JSON.stringify(total));
+    localStorage.setItem("total", JSON.stringify(total));
 }
 
 DisplayCartItems(GetCartItems());
 
 //*function to incerese the quantity
-function IncreaseQty(cartId,quantity,prodId){
+function IncreaseQty(cartId, quantity, prodId) {
     let updatedItem = {
         CartItemId: cartId,
-        Quantity: quantity + 1
+        Quantity: quantity + 1,
     };
 
     //fetching product to check quantity
-    let prod= GetProduct(prodId);
-    if(!prod){
+    let prod = GetProduct(prodId);
+    if (!prod) {
         alert("Error fetching product");
         return;
     }
-    if(prod.StockQuantity<updatedItem.Quantity){
+    if (prod.StockQuantity < updatedItem.Quantity) {
         alert("Not enough stock available!");
         return;
     }
@@ -59,59 +59,58 @@ function IncreaseQty(cartId,quantity,prodId){
         contentType: "application/json",
         data: JSON.stringify(updatedItem),
         success: (res) => {
-            console.log(res)
+            console.log(res);
             DisplayCartItems(GetCartItems());
         },
         error: (err) => {
             console.log(err);
-        }
+        },
     });
 }
 
 //function to decrease the quantity
-function DecreaseQty(cartId,quantity){
+function DecreaseQty(cartId, quantity) {
     let updatedItem = {
         CartItemId: cartId,
-        Quantity: quantity - 1
+        Quantity: quantity - 1,
     };
-    
-    if(updatedItem.Quantity==0){
+
+    if (updatedItem.Quantity == 0) {
         $.ajax({
             url: `${cartApi}?cartItemId=${cartId}`,
             type: "DELETE",
 
             success: (res) => {
-                console.log(res)
+                console.log(res);
                 DisplayCartItems(GetCartItems());
             },
             error: (err) => {
                 console.log(err);
-            }
+            },
         });
-    }else{
+    } else {
         $.ajax({
             url: cartApi,
             type: "PUT",
             contentType: "application/json",
             data: JSON.stringify(updatedItem),
             success: (res) => {
-                console.log(res)
+                console.log(res);
                 DisplayCartItems(GetCartItems());
             },
             error: (err) => {
                 console.log(err);
-            }
+            },
         });
     }
 }
 
-$(".pay").on("click",()=>{
+$(".pay").on("click", () => {
     let cart = GetCartItems();
-    if(cart.length<=0){
-        alert("please atLeast add one product to cart")
+    if (cart.length <= 0) {
+        alert("please atLeast add one product to cart");
         return;
+    } else {
+        window.location.href = "Pay.html";
     }
-    else{
-        window.location.href="Pay.html";
-    }
-})
+});

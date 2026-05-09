@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Payment</title>
+
+        <script src="../jquery-4.0.0.js"></script>
+        <script type="module" src="../dist/PaymentPage.js"></script>
+
+        <style>
+            body {
+                font-family: "Segoe UI";
+                background: #f9f7ff;
+            }
+
+            .payment-box {
+                width: 350px;
+                margin: 80px auto;
+                background: white;
+                padding: 30px;
+                border-radius: 12px;
+                text-align: center;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            }
+
+            input {
+                border-radius: 5px;
+                border: solid 1px lightgray;
+                width: 90%;
+                padding: 10px;
+                margin: 10px 0;
+            }
+
+            button {
+                width: 100%;
+                padding: 12px;
+                background: #5a0ffa;
+                color: white;
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background: #9d65fe;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="payment-box">
+            <h2>Payment</h2>
+
+            <p id="totalAmount"></p>
+
+            <input type="text" placeholder="Card Number" />
+            <input type="text" placeholder="Expiry" />
+            <input type="text" placeholder="CVV" />
+
+            <button id="payBtn">Pay Now</button>
+        </div>
+    </body>
+</html>

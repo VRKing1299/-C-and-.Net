@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/Navigation.css">
+    <link rel="stylesheet" href="./css/order.css">
+</head>
+<body>
+    <header>
+        
+    </header>
+    <main>
+        <section class="bill-container">
+            
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>Made by VR</p>
+            <p>Thank you for Visiting</p>
+        </div>
+    </footer>
+    <script src="./js/jquery-4.0.0.js"></script>
+    <script src="./js/common.js"></script>
+    <script>        
+        let id =JSON.parse(localStorage.getItem("orderId"))
+        $.ajax({
+            url:`${orderApi}/${id}`,
+            type:"GET",
+
+            success:(resp)=>{
+                DisplayOrders(resp)
+            },
+
+            error:(resp)=>{
+                console.log(resp);                
+            }
+        })
+    </script>
+</body>
+</html>

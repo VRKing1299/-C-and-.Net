@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <link rel="stylesheet" href="../Css/login.css" />
+    </head>
+    <body>
+        <div class="login-container">
+            <h2>Create An Account</h2>
+
+            <form id="SignUp-Form">
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter Your Name"
+                    required
+                />
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter Email"
+                    required
+                />
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Enter Password"
+                    required
+                />
+
+                <select id="role" name="role">
+                    <option value="Student">Student</option>
+                    <option value="Instructor">Instructor</option>
+                </select>
+
+                <button id="SignUpBtn">Sign Up</button>
+            </form>
+
+            <p class="signup-text">
+                Already have an account? <a href="./login.html"> Sign In </a>
+            </p>
+        </div>
+
+        <script src="../jquery-4.0.0.js"></script>
+        <script type="module" src="../dist/signUp.js"></script>
+    </body>
+</html>

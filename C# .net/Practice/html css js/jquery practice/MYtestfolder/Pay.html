@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Payment</h2>
+        <p class="total">Total: ₹0.00</p>
+
+        <form id="paymentForm">
+            <label for="cardNum">Card Number</label>
+            <input type="number" id="cardNum" name="cardNum" placeholder="Enter card number" required><br><br>
+
+            <label for="expiry">Expiry Date</label>
+            <input type="month" id="expiry" name="expiry" placeholder="MM/YY" required><br><br>
+
+            <label for="cvv">CVV</label>
+            <input type="number" id="cvv" name="cvv" placeholder="CVV" required><br><br>
+
+            <button type="submit" class="btn" id="btnPay">Pay Now</button>
+        </form>
+    </div>
+
+
+    <script src="./js/jquery-4.0.0.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/PlaceOrder.js"></script>
+</body>
+</html>
